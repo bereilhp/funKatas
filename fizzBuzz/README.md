@@ -1,4 +1,4 @@
-# Rules 
+# Description 
 
 Write a function that takes a positive number(always) as an input and returns:
 - For multiples of three print Fizz instead of the number
