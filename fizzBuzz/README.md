@@ -1,5 +1,7 @@
 # Description 
 
+## FizzBuzz
+
 Write a function that takes a positive number(always) as an input and returns:
 - For multiples of three print Fizz instead of the number
 - For the multiples of five print Buzz instead of the number
