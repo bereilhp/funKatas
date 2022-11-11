@@ -1,11 +1,11 @@
 let laLigaGoals = 43;
 let championsLeagueGoals = 10;
-let CopaDelRey = 5;
+let copaDelReyGoals = 5;
 
-let totalGoals = laLigaGoals + championsLeagueGoals + CopaDelRey;
+let totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 
 function goals(){
-    return laLigaGoals + championsLeagueGoals + CopaDelRey;
+    return laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 }
 
 module.exports = goals;
