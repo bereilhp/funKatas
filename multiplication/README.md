@@ -6,5 +6,9 @@ You are studying for a test so you must practice your multiplication, but you do
 
 ## Task
 
-Your generator must take one parameter `a` then everytime the generator is called you must return a string in the format of: `'a x b = c'` where c is the answer. Also, the value of `b`, which starts at 1, must increment by 1 each time! 
+Your generator must take one parameter `a` then everytime the generator is called you must return a string in the format of: 
+
+- `'a x b = c'` where c is the answer. 
+
+Also, the value of `b`, which starts at 1, must increment by 1 each time! 
 
