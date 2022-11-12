@@ -11,6 +11,12 @@ Run the following command inside the funKatas folder:
 npm install
 ````
 
+To run the tests for ALL the fileName.test.js files run the following command:
+
+````
+npm test
+````
+
 To run the tests for a specific file run the following command:
 
 ````
