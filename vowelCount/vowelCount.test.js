@@ -1,3 +1,5 @@
+const vowelCounter = require("./vowelCount")
+
 test ("Example", () => {
-    expect("test").toBe("test");
+    expect(vowelCounter("hello how are you")).toBe(7);
 })
