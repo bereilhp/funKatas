@@ -1,5 +1,9 @@
 const count = require('./five');
 
-test("Return correct Numbers", () => {
-    expect(count(5,6)).toBe("5 + 6");
+test("1 to 9 return 8", () => {
+    expect(count(1,9)).toEqual(8);
+})
+
+test("2 to 14 return 10", () => {
+    expect(count(2,14)).toEqual(12);
 })
