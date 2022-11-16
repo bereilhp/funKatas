@@ -6,7 +6,6 @@ function twoVal(n, a, b) {
         } else 
             arr.push(b);
     }
-
     return arr
 }
 
