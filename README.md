@@ -1,8 +1,10 @@
 # funKatas
+
 Playing around and doing some katas.
 
 
 ## To get started
+
 Run the following command inside the funKatas folder:
 
 ```
