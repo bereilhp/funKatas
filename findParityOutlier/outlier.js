@@ -18,4 +18,13 @@ function eveny(a) {
     return x
 }
 
-module.exports = { oddy, eveny };
+function detector(a){
+    let x = a.reduce((a, b) => a+b,0);
+    if (x % 2 === 0){
+        return eveny(a);     
+    } else 
+        return oddy(a);
+}
+
+
+module.exports = { oddy, eveny, detector };
