@@ -13,25 +13,27 @@ function bowlingScoreSpare(a){
     let result = []
     for(let i = 0; i <= (arr.length - 1); i++){
         if(arr[i].charAt(1) == '/'){
-            console.log("Soy una barra");
             result.push(arr[i].charAt(0)); 
             let diferencia = 10 - arr[i].charAt(0);
-            console.log(diferencia);
             result.push(diferencia.toString()); 
+            result.push(arr[i+1].charAt(0));
         } else {
             result.push(arr[i].charAt(0)); 
             result.push(arr[i].charAt(1));
         }
     }
-    return (result);
+    return (result.map(Number).reduce((a,b)=> a+b,0));
 }
 
 function bowlingScoreStrike(a){
     const arr = a.split(" "); //.map(Number);
     let result = []
     for(let i = 0; i <= (arr.length - 1); i++){
-        if(arr[i] == "X"){
-            result.push(arr[i].charAt(0)); 
+        if(arr[i].charAt(0) == 'X'){
+            let strike = 10;
+            result.push(strike.toString()); 
+            result.push(arr[i+1].charAt(0));
+            result.push(arr[i+1].charAt(1));
         }else {
             result.push(arr[i].charAt(0)); 
             result.push(arr[i].charAt(1));
