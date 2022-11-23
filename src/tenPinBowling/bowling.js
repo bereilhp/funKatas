@@ -60,4 +60,4 @@ function bowlingScoreStrike(a){
     return (result.map(Number).reduce((a,b) => a + b,0));
 }
 
-module.exports = { bowlingScoreSimple, bowlingScoreSpare, bowlingScoreSpareWithExtra } ;
+module.exports = { bowlingScoreSimple, bowlingScoreSpare, bowlingScoreSpareWithExtra, bowlingScoreStrike } ;
