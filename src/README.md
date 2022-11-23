@@ -1,4 +1,6 @@
 # funKatas
 
-Playing around and doing some katas.
-
+All Kata folders contain:
+- README file with description about the kata
+- Code file 
+- Test file 
