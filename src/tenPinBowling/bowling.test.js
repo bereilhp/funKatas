@@ -9,5 +9,5 @@ test ("All number 0", () => {
 });
 
 test ("All numbers and spares", () => {
-    expect(bowlingScoreSpare("5/ 45 63 54 62 71 81 72 54 34")).toEqual(91);
+    expect(bowlingScoreSpare("6/ 45 63 54 62 71 81 72 54 34")).toBe(91);
 })
