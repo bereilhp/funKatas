@@ -1,3 +1,4 @@
-test ("Example", () => {
-    expect("test").toBe("test");
+const likes = require("./like");
+test ("Dummy", () => {
+    expect(likes("Peter")).toBe("Peter likes this");
 })
