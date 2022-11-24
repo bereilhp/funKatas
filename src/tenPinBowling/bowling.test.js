@@ -28,3 +28,7 @@ test ("All numbers one strike", () => {
 test ("All numbers and multiple strikes", () => {
     expect(bowlingScoreStrike("X 54 X 62 72 72 X 54 63 42")).toBe(115)
 });
+
+test ("All numbers and multiple strikes and extra strike end", () => {
+    expect(bowlingScoreStrikeWithExtra("X 54 X 62 72 72 X 54 63 X 33")).toBe(125)
+});
