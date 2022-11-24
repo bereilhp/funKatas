@@ -75,7 +75,7 @@ function bowlingScoreStrikeWithExtra(a){
         }
     }
 
-    return (result.map(Number).reduce((a,b) => a + b,0) - result[result.length - 2] - result[result.length - 2]);
+    return (result.map(Number).reduce((a,b) => a + b,0) - result[result.length - 2] - result[result.length - 1]);
 }
 
 module.exports = { bowlingScoreSimple, bowlingScoreSpare, bowlingScoreSpareWithExtra, bowlingScoreStrike, bowlingScoreStrikeWithExtra } ;
