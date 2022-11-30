@@ -1,5 +1,8 @@
-function dni(a){
-    return a;
+function dni(a){ 
+    if(a.length == 9){
+        return a.length;
+    } else 
+        return "Incorrect format"
 
 }
 
