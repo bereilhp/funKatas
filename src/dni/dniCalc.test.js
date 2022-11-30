@@ -1,4 +1,4 @@
-const { dni, dniLetra } = require("./dniCalc.js");
+const { dni, dniSuma, dniLetra } = require("./dniCalc.js");
 test ("Test Dni Size", () => {
     expect(dni([1,2,3,3,5,6,7,8,"T"])).toBe(9);
 });
@@ -25,4 +25,12 @@ test ("Test Dni with I", () => {
 
 test ("Test Dni with O", () => {
     expect(dni([1,2,3,3,5,6,7,8,"O"])).toBe("ID should not contain this letter");
+});
+
+test ("Test Sum Dni", () => {
+    expect(dniSuma([1,2,3,4,5,6,7,8,"O"])).toBe(36);
+});
+
+test ("Test Sum Dni", () => {
+    expect(dniLetra([1,2,3,4,5,6,7,8,"J"])).toBe("ID valid");
 });

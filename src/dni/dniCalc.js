@@ -16,8 +16,27 @@ function dni(a){
         return "The ID should only be 9 characters long";
 }
 
-function dniLetra(a){
-    
+function dniSuma(a){
+    let arr = [];
+    for(let i = 0; i < (a.length-1); i++){
+        arr.push(a[i]);
+    }
+
+    return arr.reduce((a,b) => a+b,0);  
 }
 
-module.exports = { dni, dniLetra };
+function dniLetra(a){
+    let arr = ["T","R","W", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]; 
+    let x = dniSuma(a);
+    let ans = x % 23
+    
+    if(a[8] == arr[ans-1]){
+        return "ID valid";
+    }else 
+        return "ID invalid";
+    
+
+}
+
+module.exports = { dni, dniSuma, dniLetra };
+
