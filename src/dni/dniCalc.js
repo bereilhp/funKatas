@@ -38,5 +38,17 @@ function dniLetra(a){
 
 }
 
-module.exports = { dni, dniSuma, dniLetra };
+function nie(a){
+    let x = dni(a);
+    console.log(x);
+    if(a[0] == 0){
+        return "X";
+    } else if(a[0] == 1){
+        return "Y";
+    } else if(a[0] == 2){ 
+        return "Z";
+    }
+}
+
+module.exports = { dni, dniSuma, dniLetra, nie };
 

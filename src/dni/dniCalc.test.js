@@ -1,4 +1,4 @@
-const { dni, dniSuma, dniLetra } = require("./dniCalc.js");
+const { dni, dniSuma, dniLetra, nie } = require("./dniCalc.js");
 test ("Test Dni Size", () => {
     expect(dni([1,2,3,3,5,6,7,8,"T"])).toBe(9);
 });
@@ -31,6 +31,10 @@ test ("Test Sum Dni", () => {
     expect(dniSuma([1,2,3,4,5,6,7,8,"O"])).toBe(36);
 });
 
-test ("Test Sum Dni", () => {
+test ("Test Valid Letter ID", () => {
     expect(dniLetra([1,2,3,4,5,6,7,8,"J"])).toBe("ID valid");
+});
+
+test ("Test Letter Nie", () => {
+    expect(nie([1,2,3,4,5,6,7,8,"J"])).toBe("Y");
 });
