@@ -1,6 +1,6 @@
 # funKatas
 
-Playing around and doing some katas.
+Playing around and doing some katas with TDD.
 
 
 ## To get started
