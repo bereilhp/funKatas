@@ -1,3 +1,4 @@
-test ("Example", () => {
-    expect("test").toBe("test");
+const dni = require("./dniCalc");
+test ("Dummy", () => {
+    expect(dni(1)).toBe(1);
 })
