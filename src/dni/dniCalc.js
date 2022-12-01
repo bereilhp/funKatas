@@ -7,7 +7,7 @@ function dni(a){
                 return "The ID should only be numbers and the last a letter";
         }
     
-        if(a[8] == "U" || (a[8] == "I") || (a[8] == "O") || (a[8] == "Ñ")){
+        if((a[8] == "U") || (a[8] == "I") || (a[8] == "O") || (a[8] == "Ñ")){
             return "ID should not contain this letter"; 
         } else      
             return a.length;
