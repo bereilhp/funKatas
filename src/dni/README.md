@@ -1,6 +1,6 @@
 # Description 
 
-## DNI Kata 
+## ID Kata 
 
 Rules: 
 
