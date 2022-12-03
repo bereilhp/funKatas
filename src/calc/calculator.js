@@ -14,4 +14,9 @@ const div = (first,second) => {
     return first / second;
 }
 
-module.exports = { add, sub, mul, div };
+
+const mod = (first,second) => {
+    return first % second;
+}
+
+module.exports = { add, sub, mul, div, mod };
