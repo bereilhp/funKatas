@@ -1,4 +1,4 @@
-const { add, sub, mul, div, mod } = require("./calculator");
+const { add, sub, mul, div, mod, exp } = require("./calculator");
 test ("Add test", () => {
     expect(add(4,5)).toBe(9);
 });
@@ -17,4 +17,8 @@ test ("Div test", () => {
 
 test ("Mod test", () => {
     expect(mod(30,7)).toBe(2);
+});
+
+test ("Exp test", () => {
+    expect(exp(2,4)).toBe(16);
 });

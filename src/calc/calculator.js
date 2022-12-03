@@ -19,4 +19,8 @@ const mod = (first,second) => {
     return first % second;
 }
 
-module.exports = { add, sub, mul, div, mod };
+const exp = (first,second) => {
+    return first ** second;
+}
+
+module.exports = { add, sub, mul, div, mod, exp };
