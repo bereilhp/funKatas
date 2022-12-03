@@ -10,4 +10,8 @@ const mul = (first,second) => {
     return first * second;
 }
 
-module.exports = { add, sub, mul };
+const div = (first,second) => {
+    return first / second;
+}
+
+module.exports = { add, sub, mul, div };
