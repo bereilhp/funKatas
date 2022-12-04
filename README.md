@@ -29,4 +29,4 @@ An example of the command above could be:
 npm test -- messi.test.js
 ````
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
