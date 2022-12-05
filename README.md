@@ -1,4 +1,5 @@
 # funKatas
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Playing around and doing some katas with TDD.
 
@@ -29,4 +30,4 @@ An example of the command above could be:
 npm test -- messi.test.js
 ````
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
