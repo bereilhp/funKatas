@@ -26,7 +26,7 @@ function dniSuma(a){
 }
 
 function dniLetra(a){
-    let arr = ["T","R","W", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]; 
+    let arr = ["T","R","W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]; 
     let x = dniSuma(a);
     let ans = x % 23
     

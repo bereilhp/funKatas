@@ -20,6 +20,8 @@ The table for the ID is the next:
 
 2 = W
 
+3 = A
+
 4 = G
 
 5 = M
