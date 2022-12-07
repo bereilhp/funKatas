@@ -1,25 +1,27 @@
 function dni(a){ 
-    if(a.length == 9){
-        for(let i = 0; i < (a.length-1); i++){
-            if(typeof(a[i]) == 'number'){
-                continue;
+    let x = dniCharsToArray(a)
+    if(x.length == 9){
+        for(let i = 0; i < (x.length-1); i++){
+            if(typeof(x[i]) == 'number'){
+                    continue;
             } else
                 return "The ID should only be numbers and the last a letter";
         }
     
-        if((a[8] == "U") || (a[8] == "I") || (a[8] == "O") || (a[8] == "Ñ")){
+        if((x[8] == "U") || (x[8] == "I") || (x[8] == "O") || (x[8] == "Ñ")){
             return "ID should not contain this letter"; 
         } else      
-            return a.length;
+            return x.length;
 
     } else 
         return "The ID should only be 9 characters long";
 }
 
 function dniSuma(a){
+    let x = dniCharsToArray(a);
     let arr = [];
-    for(let i = 0; i < (a.length-1); i++){
-        arr.push(a[i]);
+    for(let i = 0; i < (x.length-1); i++){
+        arr.push(x[i]);
     }
 
     return arr.reduce((a,b) => a+b,0);  
@@ -39,8 +41,8 @@ function dniLetra(a){
 }
 
 function nie(a){
-    let x = dni(a);
-    console.log(x);
+    let x = dniCharsToArray(a);
+    //console.log(x);
     if(a[0] == 0){
         return "X";
     } else if(a[0] == 1){
@@ -50,5 +52,17 @@ function nie(a){
     }
 }
 
-module.exports = { dni, dniSuma, dniLetra, nie };
+function dniCharsToArray(a){
+    let arr = [];
+    for(let i=0; i<a.length-1; i++){
+        arr.push(Number(a[i]));
+    }
+    let NoNaN = arr.map(value => isNaN(value) ? "letter" : value);
+    NoNaN.push(a[a.length-1]);
+
+    return NoNaN
+    
+}
+
+module.exports = { dni, dniSuma, dniLetra, nie, dniCharsToArray };
 

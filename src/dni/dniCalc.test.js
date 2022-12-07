@@ -1,40 +1,48 @@
-const { dni, dniSuma, dniLetra, nie } = require("./dniCalc.js");
+const { dni, dniSuma, dniLetra, nie, dniCharsToArray } = require("./dniCalc.js");
 test ("Test Dni Size", () => {
-    expect(dni([1,2,3,3,5,6,7,8,"T"])).toBe(9);
+    expect(dni("12345678T")).toBe(9);
 });
 
 test ("Test Dni Size More", () => {
-    expect(dni([1,2,3,3,5,6,7,8,"T",10])).toBe("The ID should only be 9 characters long");
+    expect(dni("12335678T10")).toBe("The ID should only be 9 characters long");
 });
 
 test ("Test Dni with more letters", () => {
-    expect(dni([1,2,3,3,5,"R",7,8,"T"])).toBe("The ID should only be numbers and the last a letter");
+    expect(dni("12335R78T")).toBe("The ID should only be numbers and the last a letter");
+});
+
+test ("Test Dni with more letters 2", () => {
+    expect(dni("12E35R78T")).toBe("The ID should only be numbers and the last a letter");
 });
 
 test ("Test Dni with Ñ", () => {
-    expect(dni([1,2,3,3,5,6,7,8,"Ñ"])).toBe("ID should not contain this letter");
+    expect(dni("12335678Ñ")).toBe("ID should not contain this letter");
 });
 
 test ("Test Dni with U", () => {
-    expect(dni([1,2,3,3,5,6,7,8,"U"])).toBe("ID should not contain this letter");
+    expect(dni("12335678U")).toBe("ID should not contain this letter");
 });
 
 test ("Test Dni with I", () => {
-    expect(dni([1,2,3,3,5,6,7,8,"I"])).toBe("ID should not contain this letter");
+    expect(dni("12335678I")).toBe("ID should not contain this letter");
 });
 
 test ("Test Dni with O", () => {
-    expect(dni([1,2,3,3,5,6,7,8,"O"])).toBe("ID should not contain this letter");
+    expect(dni("12335678O")).toBe("ID should not contain this letter");
 });
 
 test ("Test Sum Dni", () => {
-    expect(dniSuma([1,2,3,4,5,6,7,8,"O"])).toBe(36);
+    expect(dniSuma("12345678O")).toBe(36);
 });
 
 test ("Test Valid Letter ID", () => {
-    expect(dniLetra([1,2,3,4,5,6,7,8,"J"])).toBe("ID valid");
+    expect(dniLetra("12345678J")).toBe("ID invalid");
 });
 
 test ("Test Letter Nie", () => {
-    expect(nie([1,2,3,4,5,6,7,8,"J"])).toBe("Y");
+    expect(nie("12345678J")).toBe("Y");
+});
+
+test ("Test DNI chars", () => {
+    expect(dniCharsToArray("00000000T")).toEqual([0, 0, 0, 0, 0, 0, 0, 0, "T"]);
 });

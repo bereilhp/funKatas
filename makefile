@@ -2,4 +2,4 @@ open:
 	@codium .
 
 test: 
-	@npm test -- odd_int.test.js
+	@npm test -- dniCalc.test.js
