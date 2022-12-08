@@ -11,17 +11,14 @@ If you are not familiar with tennis rules, here's a short description of its sco
 each point has a corresponding call that is different from its point value. The table of points won and corresponding calls is
 given below.
 
-+----------------------+--------------------+
-| Number of points won | Corresponding call |
-+----------------------+--------------------+
-|          0           |      "love"        |
-+----------------------+--------------------+
-|          1           |       "15"         |
-+----------------------+--------------------+
-|          2           |       "30"         |
-+----------------------+--------------------+
-|          3           |       "40"         |
-+----------------------+--------------------+
+|  Number of points won | Corresponding call |
+| :-------------: | :-------------:|
+|     0           |    "love"      |
+|     1           |     "15"       |
+|     2           |     "30"       |
+|     3           |     "40"       |
+
+
 
 There's an additional rule to remember: when players are tied by one or two points, the score is described as "15-all" and
 "30-all", respectively.
