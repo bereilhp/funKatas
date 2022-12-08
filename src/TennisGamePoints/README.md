@@ -29,6 +29,11 @@ There's an additional rule to remember: when players are tied by one or two poin
 It's guaranteed that no more than 5 points have been won so far, and the game is not over yet. It is also guaranteed that at
 least one point has been won.
 
+If at least three points have been scored by each player, and the scores are equal, the score is “Deuce”.
+
+If at least three points have been scored by each side and a player has one more point than his opponent, the score of the game 
+is “Advantage” for the player in the lead.
+
 ## Input/Output
 
 [input] string score
