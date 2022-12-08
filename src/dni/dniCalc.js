@@ -79,4 +79,3 @@ function excepcionDNI(a){
 }
 
 module.exports = { dni, dniSuma, dniLetra, nie, dniCharsToArray, excepcionDNI };
-
