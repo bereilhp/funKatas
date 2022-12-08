@@ -1,4 +1,4 @@
-const { dni, dniSuma, dniLetra, nie, dniCharsToArray } = require("./dniCalc.js");
+const { dni, dniSuma, dniLetra, nie, dniCharsToArray, excepcionDNI } = require("./dniCalc.js");
 test ("Test Dni Size", () => {
     expect(dni("12345678T")).toBe(9);
 });
@@ -45,4 +45,8 @@ test ("Test Letter Nie", () => {
 
 test ("Test DNI chars", () => {
     expect(dniCharsToArray("00000000T")).toEqual([0, 0, 0, 0, 0, 0, 0, 0, "T"]);
+});
+
+test ("Test DNI char size expection", () => {
+    expect(excepcionDNI("000000300T")).toEqual("Incorrect Size");
 });

@@ -64,5 +64,19 @@ function dniCharsToArray(a){
     
 }
 
-module.exports = { dni, dniSuma, dniLetra, nie, dniCharsToArray };
+function excepcionDNI(a){
+    try{
+        let arr = dniCharsToArray(a);
+        if (arr.length != 9){
+            //throw new Error("Incorrect Size");
+            throw "Incorrect Size";
+            //return "Incorrect Size"
+        }else
+            return "Correct Size";
+    }catch(e){
+       return e;
+    }
+}
+
+module.exports = { dni, dniSuma, dniLetra, nie, dniCharsToArray, excepcionDNI };
 
