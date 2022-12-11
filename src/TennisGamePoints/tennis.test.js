@@ -1,23 +1,4 @@
-const { players, tennisScore } = require("./tennis")
-test ("Test players 0-0 (love-love)", () => {
-    expect(players(0,0)).toBe("love-love");
-});
-
-test ("Test players 1-0 (love-love)", () => {
-    expect(players(1,0)).toBe("15-love");
-});
-
-test ("Test players 2-0 (30-love)", () => {
-    expect(players(2,0)).toBe("30-love");
-});
-
-test ("Test players 3-0 (40-love)", () => {
-    expect(players(3,0)).toBe("40-love");
-});
-
-test ("Test players 4-0 (Gmae player 1)", () => {
-    expect(players(4,0)).toBe("Game p1");
-});
+const { tennisScore, tennisScoreGames} = require("./tennis")
 
 test ("Score 15 - love", () => {
     expect(tennisScore("15-love")).toBe(1);
@@ -59,8 +40,17 @@ test ("Advatnage p1", () => {
     expect(tennisScore("Advantage p1")).toBe(7);
 });
 
+test ("Advatnage p1 refactor", () => {
+    expect(tennisScore("Ad-40")).toBe(7);
+});
+
+
 test ("Advatnage p2", () => {
     expect(tennisScore("Advantage p2")).toBe(7);
+});
+
+test ("Advatnage p2 refactor", () => {
+    expect(tennisScore("40-Ad")).toBe(7);
 });
 
 test ("Game p1", () => {
@@ -69,4 +59,16 @@ test ("Game p1", () => {
 
 test ("Game p2", () => {
     expect(tennisScore("15-Game")).toBe("Game Player 2. He won by 3 points");
+});
+
+test ("Game Score p1", () => {
+    expect(tennisScoreGames("4-2")).toBe("Player p1 is winning by 2 games and the score is 4-2");
+});
+
+test ("Game Score p2", () => {
+    expect(tennisScoreGames("2-4")).toBe("Player p2 is winning by 2 games and the score is 2-4");
+});
+
+test ("Game Score tied", () => {
+    expect(tennisScoreGames("4-4")).toBe("They are tied in games and the score is 4-4");
 });
