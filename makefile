@@ -2,4 +2,4 @@ open:
 	@codium .
 
 test: 
-	@npm test -- class.test.js
+	@npm test -- tennis.test.js

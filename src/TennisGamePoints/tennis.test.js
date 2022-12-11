@@ -46,3 +46,19 @@ test ("Score 15 - all", () => {
 test ("Score 30 - all", () => {
     expect(tennisScore("30-all")).toBe(4);
 });
+
+test ("Score = Deuce", () => {
+    expect(tennisScore("Deuce")).toBe(6);
+});
+
+test ("Score 40 - 30", () => {
+    expect(tennisScore("40-30")).toBe(5);
+});
+
+test ("Advatnage p1", () => {
+    expect(tennisScore("Advantage p1")).toBe(7);
+});
+
+test ("Advatnage p2", () => {
+    expect(tennisScore("Advantage p2")).toBe(7);
+});
