@@ -62,3 +62,11 @@ test ("Advatnage p1", () => {
 test ("Advatnage p2", () => {
     expect(tennisScore("Advantage p2")).toBe(7);
 });
+
+test ("Game p1", () => {
+    expect(tennisScore("Game-30")).toBe("Game Player 1. He won by 2 points");
+});
+
+test ("Game p2", () => {
+    expect(tennisScore("15-Game")).toBe("Game Player 2. He won by 3 points");
+});

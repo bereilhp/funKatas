@@ -21,7 +21,6 @@ function players(p1,p2){
 }  
 
 function tennisScore(score){
-    console.log(score);
     let splitScore = score.split("-");
     //console.log(splitScore);
     //let p1Score = score[0] + score[1];
@@ -31,14 +30,14 @@ function tennisScore(score){
     //console.log(p1Score + " " + p2Score);
     
 
-    let arr = ["love", "15", "30", "40", "all"];
+    let arr = ["love", "15", "30", "40", "Game", "all"];
 
     let p1ScoreNum = arr.indexOf(p1Score);
     let p2ScoreNum = arr.indexOf(p2Score);
     //console.log(p2ScoreNum);
 
 
-    if(p2ScoreNum === 4){
+    if(p2ScoreNum === 5){
         return p1ScoreNum + p1ScoreNum;
     }else if(score === "Deuce" || (score === "deuce")){
         return 6;
@@ -46,6 +45,10 @@ function tennisScore(score){
         return 7
     }else if(score === "Advantage p2"){
         return 7;
+    }else if(p1ScoreNum == 4){
+        return `Game Player 1. He won by ${p1ScoreNum - p2ScoreNum} points`
+    }else if(p2ScoreNum === 4){
+        return `Game Player 2. He won by ${p2ScoreNum - p1ScoreNum} points`
     }
     
     return p1ScoreNum + p2ScoreNum;
