@@ -1,5 +1,12 @@
 function add(a,b){
-    return a+b;
+    try{
+        if(typeof(a) == "number" && typeof(b)== "number"){
+            return a+b; 
+        }else 
+            throw "Not a number"
+    }catch(e){
+        return e;
+    }
 };
 
 
