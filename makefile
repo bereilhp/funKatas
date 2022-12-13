@@ -2,4 +2,4 @@ open:
 	@codium .
 
 test: 
-	@npm test -- adders.test.js
+	@npm test -- square.test.js
