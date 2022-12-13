@@ -5,4 +5,9 @@ test ("Prove if function exist", () => {
 
 test ("Square a number", () => {
     expect(square(5)).toBe(25);
-})
+});
+
+test ("Square a number with two values", () => {
+    expect(square(50)).toBe(250);
+});
+
