@@ -9,6 +9,10 @@ function add(a,b){
     }
 };
 
+function testa(){
+    let x = add(4,5);
+    return x;
 
+}
 
-module.exports = add;
+module.exports = { add, testa };
