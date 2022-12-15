@@ -23,7 +23,7 @@ El fichero .test.js contiene todos los test y el fichero .js todas las funciones
 
 ## Instrucciones adicionales 
 
-Hemos añadido en el .gitignore la carpeta node_modules.
+Hemos añadido en el .gitignore la carpeta node_modules y coverage.
 
 
 
