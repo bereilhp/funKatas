@@ -5,7 +5,6 @@ Para esta prueba hemos utilizado node.js y jest testing framework.
 ## Instrucciones para ejecutar
 
 - Tener instalado node en este caso usamos la version v18.11.0. Para comprobar que version tenemos instalada utilizar el siguiente comando:
- 
 ```
 node --version 
 ```
