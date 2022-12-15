@@ -1,7 +1,7 @@
 git: 
-	git add .
-	git commit -m "$m"
-	git push 
+	@git add .
+	@git commit -am "$men"
+	@git push 
 
 open:
 	@codium .
