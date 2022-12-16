@@ -1,6 +1,7 @@
 const { add, sub, mul, div, mod, exp } = require("./calculator");
+const addy = require("./calculator").add
 test ("Add test", () => {
-    expect(add(4,5)).toBe(9);
+    expect(addy(4,5)).toBe(9);
 });
 
 test ("Sub test", () => {

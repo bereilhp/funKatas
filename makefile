@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- object.test.js
+	@npm test -- calculator.test.js
 

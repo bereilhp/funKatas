@@ -1,4 +1,4 @@
-const capital = require("./capitals.js")
+const capital = require("./capitals.js");
 test ("Example", () => {
     expect("test").toBe("test");
 })
