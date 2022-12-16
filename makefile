@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- capitals.test.js
+	@npm test -- object.test.js
 

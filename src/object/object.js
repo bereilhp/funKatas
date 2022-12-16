@@ -4,4 +4,9 @@ const car = {
     color: "white"
 }
 
+car.sayType = function(type){
+    return type;
+
+}
+
 module.exports = car;
