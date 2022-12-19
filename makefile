@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- calculator.test.js
+	@npm test -- fibonacci.test.js
 
