@@ -30,7 +30,7 @@ An example of the command above could be:
 npm test -- messi.test.js
 ````
 
-You can also run using makefile with the following command:
+You can also run a specific test file using makefile with the following command:
 ````
 make test
 ````
