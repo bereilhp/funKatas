@@ -1,6 +1,6 @@
 git: 
 	@git add .
-	@git commit -am "$men"
+	@git commit -am "$m"
 	@git push 
 
 open:
