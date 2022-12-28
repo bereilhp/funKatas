@@ -6,3 +6,7 @@ test ("Example", () => {
 test("Test if object exists", () => {
     expect(typeof(growy)).toBe("object")
 })
+
+test("Test if object exists", () => {
+    expect(typeof(growy.reducey)).toBe("function")
+})
