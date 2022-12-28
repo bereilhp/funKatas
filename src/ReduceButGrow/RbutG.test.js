@@ -1,3 +1,4 @@
+const growy = require("./RbutG")
 test ("Example", () => {
     expect("test").toBe("test");
 })
