@@ -10,3 +10,7 @@ test("Test if object exists", () => {
 test("Test if object exists", () => {
     expect(typeof(growy.reducey)).toBe("function")
 })
+
+test("Test if object exists", () => {
+    expect(growy.reducey([1, 2, 3, 4])).toBe(24)
+})
