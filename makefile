@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- heron.test.js
+	@npm test -- RbutG.test.js
 
