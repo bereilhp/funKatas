@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- RbutG.test.js
+	@npm test -- end.test.js
 
