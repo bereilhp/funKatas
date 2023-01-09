@@ -5,7 +5,6 @@
 
 Playing around and doing some katas with TDD.
 
-
 ## To get started
 
 Run the following command inside the funKatas folder:
