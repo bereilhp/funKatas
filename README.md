@@ -30,5 +30,3 @@ You can also run a specific test file using makefile with the following command:
 ````
 make test
 ````
-
-
