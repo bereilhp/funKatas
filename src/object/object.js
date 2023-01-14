@@ -4,9 +4,13 @@ const car = {
     color: "white"
 }
 
-car.sayType = function(type){
-    return type;
+car.sayModel = function(){
+    return car.model;
 
+}
+
+car.sayType = function(){
+    return car.type;
 }
 
 module.exports = car;

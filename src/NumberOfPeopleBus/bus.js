@@ -5,3 +5,5 @@ bus.numberOfPeople = function(a){
 }
 
 module.exports =  bus
+
+//[[10,0],[3,5],[5,8]]),5)            
