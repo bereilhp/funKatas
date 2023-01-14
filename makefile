@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- end.test.js
+	@npm test -- bus.test.js
 
