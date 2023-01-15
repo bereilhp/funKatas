@@ -22,3 +22,7 @@ test("Object function #2", () => {
 test("Object function #3", () => { 
     expect(bus.numberOfPeople([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]],21)).toBe(21)
 });
+
+test("Object function #4", () => { 
+    expect(bus.numberOfPeople([[0,0]],0)).toBe(0)
+});
