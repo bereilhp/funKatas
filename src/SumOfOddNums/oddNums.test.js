@@ -4,5 +4,9 @@ test ("Test #1", () => {
 });
 
 test ("Test #2", () => {
-    expect(oddNum.calculateSum(1)).toBe(1);
+    expect(oddNum.calculateSum(2)).toBe(8);
+});
+
+test ("Test #3", () => {
+    expect(oddNum.calculateSum(42)).toBe(74088);
 });
