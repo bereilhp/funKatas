@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- bus.test.js
+	@npm test -- oddNums.test.js
 
