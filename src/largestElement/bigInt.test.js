@@ -4,5 +4,5 @@ test ("Example", () => {
 });
 
 test ("Test #1", () => {
-    expect(num.biggestInt(1,2)).toBe(2);
+    expect(num.biggestInt(2,[7,6,5,4,3,2,1])).toEqual([6,7]);
 });
