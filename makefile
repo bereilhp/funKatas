@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- bigInt.test.js
+	@npm test -- trimmer.test.js
 
