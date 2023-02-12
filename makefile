@@ -1,11 +1,11 @@
 git: 
 	@git add .
-	@git commit -am "$m"
+	@git commit -S -am "$m" #m="your message"
 	@git push 
 
 open:
 	@codium .
 
 test: 
-	@npm test -- trimmer.test.js
+	@npm test -- case.test.js
 
