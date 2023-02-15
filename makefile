@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- case.test.js
+	@npm test -- squareSum.test.js
 
