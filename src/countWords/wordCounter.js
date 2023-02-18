@@ -8,6 +8,4 @@ class Words {
     }
 }
 
-
-
 module.exports = Words;

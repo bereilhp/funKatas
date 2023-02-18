@@ -1,12 +1,13 @@
 const Words = require("./wordCounter");
 let word = new Words("string")
-test ("Example", () => {
-    expect("test").toBe("test");
-});
 
 beforeEach(() => {
     let word = new Words("string")
     return word;
+});
+
+test ("Example", () => {
+    expect("test").toBe("test");
 });
 
 test ("Test typeof class words", () => {
@@ -24,6 +25,12 @@ test ("Test class words create a word with type string", () => {
 test ("Test object word function counter", () => {
     expect(typeof(word.counter)).toEqual("function");
 });
+
+test ("Test object word function counter", () => {
+    expect(word.counter([1,2,3])).toEqual([1,2,3]);
+});
+
+
 
 
 
