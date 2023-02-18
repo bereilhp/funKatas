@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- squareSum.test.js
+	@npm test -- wordCounter.test.js
 
