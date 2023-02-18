@@ -17,6 +17,10 @@ test ("Test class words create a word", () => {
     expect(word).toEqual({"type": "string"});
 });
 
+test ("Test class words create a word with type string", () => {
+    expect(word.type).toEqual("string");
+});
+
 
 
 
