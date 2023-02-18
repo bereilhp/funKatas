@@ -4,7 +4,8 @@ class Words {
     }
 
     counter(list){
-        return list;
+        let wordCount = list.split(" ").length;
+        return wordCount;
     }
 }
 

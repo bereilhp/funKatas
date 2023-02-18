@@ -26,8 +26,12 @@ test ("Test object word function counter", () => {
     expect(typeof(word.counter)).toEqual("function");
 });
 
-test ("Test object word function counter", () => {
-    expect(word.counter([1,2,3])).toEqual([1,2,3]);
+test ("Test object word function counter words", () => {
+    expect(word.counter("Hello world")).toEqual(2);
+});
+
+test ("Test object word function counter words", () => {
+    expect(word.counter("Hello")).toEqual(1);
 });
 
 
