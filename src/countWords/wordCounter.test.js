@@ -21,6 +21,12 @@ test ("Test class words create a word with type string", () => {
     expect(word.type).toEqual("string");
 });
 
+test ("Test object word function counter", () => {
+    expect(typeof(word.counter)).toEqual("function");
+});
+
+
+
 
 
 
