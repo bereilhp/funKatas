@@ -26,16 +26,20 @@ test ("Test object word function counter", () => {
     expect(typeof(word.counter)).toEqual("function");
 });
 
-test ("Test object word function counter words", () => {
+test ("Test object word function counter words #0", () => {
     expect(word.counter("Hello world")).toEqual(2);
 });
 
-test ("Test object word function counter words", () => {
+test ("Test object word function counter words #1", () => {
     expect(word.counter("Hello")).toEqual(1);
 });
 
-test ("Test object word function counter words", () => {
+test ("Test object word function counter words #2", () => {
     expect(word.counter('No results for search term `s`')).toEqual(6);
+});
+
+test ("Test object word function counter words #3", () => {
+    expect(word.counter(' Hello')).toEqual(1);
 });
 
 

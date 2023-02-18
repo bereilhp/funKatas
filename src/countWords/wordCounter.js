@@ -5,7 +5,11 @@ class Words {
 
     counter(list){
         let wordCount = list.split(" ").length;
-        return wordCount;
+        if(list[0] == " "){
+            return wordCount - 1
+        }else { 
+            return wordCount;
+        }
     }
 }
 
