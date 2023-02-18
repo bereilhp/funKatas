@@ -34,6 +34,11 @@ test ("Test object word function counter words", () => {
     expect(word.counter("Hello")).toEqual(1);
 });
 
+test ("Test object word function counter words", () => {
+    expect(word.counter('No results for search term `s`')).toEqual(6);
+});
+
+
 
 
 
