@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- wordCounter.test.js
+	@npm test -- ascii.test.js
 
