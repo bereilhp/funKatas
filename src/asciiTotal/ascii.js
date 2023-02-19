@@ -1,6 +1,8 @@
 class Ascii {
-    total(char){
-        return char;
+    uniTotal(char){
+        for(let i = 0; i < char.length; i++){
+            return char.charCodeAt(i);
+        }
     }
 }
 
