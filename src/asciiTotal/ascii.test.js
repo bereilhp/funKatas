@@ -14,7 +14,14 @@ test ("Test object ascii function uniTotal", () => {
 });
 
 test ("Test object ascii function uniTotal value", () => {
-    expect(char.uniTotal("a")).toBe("1");
+    expect(char.uniTotal("a")).toBe(97);
 });
 
+test ("Test object ascii function uniTotal value adding", () => {
+    expect(char.uniTotal("aaa")).toBe(291);
+});
+
+test ("Test object ascii function uniTotal value adding", () => {
+    expect(char.uniTotal("abc")).toBe(294);
+});
 
