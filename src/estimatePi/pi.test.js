@@ -8,3 +8,7 @@ test ("Example", () => {
 test ("getPi", () => {
     expect(typeof(getPi)).toEqual("object");
 });
+
+test ("getPi and estimate pi", () => {
+    expect(getPi.estimatePi(1000000)).toBeCloseTo(3.14,2);
+});
