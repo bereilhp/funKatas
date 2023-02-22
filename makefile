@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- ascii.test.js
+	@npm test -- pi.test.js
 
