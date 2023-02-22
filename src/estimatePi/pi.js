@@ -11,10 +11,10 @@ class Pi {
               points_circle++;
             } 
 
-            points_square++;
+            //points_square++;
           }
         
-          return (4 * points_circle) / points_square;
+          return (4 * points_circle) / randomNumber;
         }
     }
 
