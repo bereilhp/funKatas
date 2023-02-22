@@ -8,7 +8,7 @@ class Pi {
             let distance = Math.sqrt(Math.pow(point[0], 2) + Math.pow(point[1], 2));
         
             if (distance < 1) {
-              points_circle++;
+                points_circle++;
             } 
 
             //points_square++;
