@@ -5,8 +5,9 @@ class Word {
      * @returns The input but reversed
      */
     reverseWord(text){
-        let chatArr = text.split("")
-        return chatArr;
+        let chatArr = text.split("");
+        let reverseArr = chatArr.reverse();
+        return reverseArr;
     }
 }
 

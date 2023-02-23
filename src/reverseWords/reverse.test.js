@@ -17,6 +17,6 @@ test ("words function", () => {
 });
 
 test ("words function test", () => {
-    expect(words.reverseWord("Hola")).toEqual(["H", "o", "l", "a"]);
+    expect(words.reverseWord("Hola")).toEqual(["a", "l", "o", "H"]);
 });
 
