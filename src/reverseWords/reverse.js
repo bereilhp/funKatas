@@ -8,8 +8,9 @@ class Word {
         let chatArr = text.split("");
         let reverseArr = chatArr.reverse();
         let joinArr = reverseArr.join("");
-        return joinArr;
+        let reverseAgain = joinArr.split(" ").reverse().join(" ");
+        return reverseAgain;
+        }
     }
-}
 
 module.exports = Word;

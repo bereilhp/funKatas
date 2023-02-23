@@ -1,5 +1,6 @@
 const Word = require("./reverse.js");
 let words = new Word;
+
 test ("Example", () => {
     expect("test").toBe("test");
 });
@@ -21,6 +22,11 @@ test ("words function test", () => {
 });
 
 test ("words function test string with more than one word", () => {
-    expect(words.reverseWord("Hello World")).toEqual("dlroW olleH");
+    expect(words.reverseWord("Hello World")).toEqual("olleH dlroW");
 });
+
+test ("words function test with a phrase", () => {
+    expect(words.reverseWord("The quick brown fox jumps over the lazy dog.")).toEqual("ehT kciuq nworb xof spmuj revo eht yzal .god");
+});
+
 
