@@ -16,3 +16,7 @@ test ("words function", () => {
     expect(typeof(words.reverseWord)).toBe("function");
 });
 
+test ("words function test", () => {
+    expect(words.reverseWord("Hola")).toBe("Hola");
+});
+
