@@ -17,6 +17,10 @@ test ("words function", () => {
 });
 
 test ("words function test", () => {
-    expect(words.reverseWord("Hola")).toEqual("aloH");
+    expect(words.reverseWord("Hello")).toEqual("olleH");
+});
+
+test ("words function test string with more than one word", () => {
+    expect(words.reverseWord("Hello World")).toEqual("dlroW olleH");
 });
 
