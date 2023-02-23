@@ -7,7 +7,8 @@ class Word {
     reverseWord(text){
         let chatArr = text.split("");
         let reverseArr = chatArr.reverse();
-        return reverseArr;
+        let joinArr = reverseArr.join("");
+        return joinArr;
     }
 }
 
