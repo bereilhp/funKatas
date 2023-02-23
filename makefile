@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- pi.test.js
+	@npm test -- reverse.test.js
 
