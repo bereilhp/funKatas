@@ -1,6 +1,11 @@
 let Similar = require("./arrSim");
 let array = new Similar();
 
+let arr1 = [1, 2, 2, 3, 4];
+let arr2 = [2, 1, 2, 4, 3];
+let arr3 = [1, 2, 3, 4];
+let arr4 = [1, 2, 3, "4"];
+
 test ("Test created object works properly", () => {
     expect(array).toEqual({});
 });
@@ -26,7 +31,9 @@ test ("Test if the object function works properly with strings", () => {
 });
 
 test ("Test if the object function works properly with lots of numbers", () => {
-    expect(array.arraySimilar([1, 2, 2, 3, 4], [2, 1, 2, 4, 3])).toEqual(true);
+    expect(array.arraySimilar(arr1, arr2)).toEqual(true);
+    expect(array.arraySimilar(arr2, arr3)).toEqual(false);
+    expect(array.arraySimilar(arr3, arr4)).toEqual(false)
 });
 
 
