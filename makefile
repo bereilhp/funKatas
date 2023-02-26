@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- reverse.test.js
+	@npm test -- arrSim.test.js
 
