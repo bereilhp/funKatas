@@ -24,3 +24,9 @@ test ("Test if the object function works properly", () => {
 test ("Test if the object function works properly with strings", () => {
     expect(array.arraySimilar([1, 2, 3, 4], [1, 2, 3, "4"])).toEqual(false);
 });
+
+test ("Test if the object function works properly with lots of numbers", () => {
+    expect(array.arraySimilar([1, 2, 2, 3, 4], [2, 1, 2, 4, 3])).toEqual(true);
+});
+
+
