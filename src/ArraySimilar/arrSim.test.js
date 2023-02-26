@@ -17,10 +17,6 @@ test ("Test if the object has a function", () => {
     expect(typeof(array.arraySimilar)).toEqual("function");
 });
 
-test ("Test if the object has a function", () => {
-    expect(typeof(array.arraySimilar)).toEqual("function");
-});
-
 test ("Test if the object function works properly", () => {
     expect(array.arraySimilar([3,2,1], [1,2,3])).toEqual(true);
 });
