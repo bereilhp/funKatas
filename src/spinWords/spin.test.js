@@ -16,3 +16,7 @@ test ("Function spinner", () => {
 test ("Function spinner #2", () => {
     expect(text.spinner("This is a test")).toBe("This is a test");
 });
+
+test ("Function spinner #3", () => {
+    expect(text.spinner("This is another test")).toBe("This is rehtona test");
+});
