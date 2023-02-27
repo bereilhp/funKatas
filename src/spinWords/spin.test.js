@@ -20,3 +20,8 @@ test ("Function spinner #2", () => {
 test ("Function spinner #3", () => {
     expect(text.spinner("This is another test")).toBe("This is rehtona test");
 });
+
+test ("Function spinner #4", () => {
+    expect(text.spinner("Just kidding there is still one more")).toBe("Just gniddik ereht is llits one more");
+});
+
