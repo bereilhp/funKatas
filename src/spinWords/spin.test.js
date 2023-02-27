@@ -12,3 +12,7 @@ test ("Object has function created", () => {
 test ("Function spinner", () => {
     expect(text.spinner("Hey fellow warriors")).toBe("Hey wollef sroirraw");
 });
+
+test ("Function spinner #2", () => {
+    expect(text.spinner("This is a test")).toBe("This is a test");
+});
