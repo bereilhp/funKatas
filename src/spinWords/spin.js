@@ -3,10 +3,10 @@ class Spin {
         let textSplit = text.split(" ");
         for(let i in textSplit){
             if(textSplit[i].length > 5){
-                textSplit[i] = textSplit[i].split("").reverse().join("")
+                textSplit[i] = textSplit[i].split("").reverse().join("");
             }
         }
-        return textSplit.join(" ")    
+        return textSplit.join(" ");    
     }        
 };
 
