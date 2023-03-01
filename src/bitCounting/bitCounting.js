@@ -1,6 +1,6 @@
 class Num {
     bitCounting(number){
-        return number;
+        return number.toString(2);
     }
 }
 
