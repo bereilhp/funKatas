@@ -20,3 +20,15 @@ test ("Function test 1234 to return 5", () => {
 test ("Function test 0 to return 0", () => {
     expect(number.bitCounting(0)).toBe(0);
 });
+
+test ("Function test 4 to return 1", () => {
+    expect(number.bitCounting(4)).toBe(1);
+});
+
+test ("Function test 7 to return 3", () => {
+    expect(number.bitCounting(7)).toBe(3);
+});
+
+test ("Function test 9 to return 2", () => {
+    expect(number.bitCounting(9)).toBe(2);
+});
