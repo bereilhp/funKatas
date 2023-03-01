@@ -12,3 +12,7 @@ test ("Object number function test", () => {
 test ("Function test 12 to return 2", () => {
     expect(number.bitCounting(12)).toBe(2);
 });
+
+test ("Function test 1234 to return 5", () => {
+    expect(number.bitCounting(1234)).toBe(5);
+});
