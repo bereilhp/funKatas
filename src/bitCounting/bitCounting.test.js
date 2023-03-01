@@ -9,6 +9,6 @@ test ("Object number function test", () => {
     expect(typeof(number.bitCounting)).toBe("function");
 });
 
-test ("Object number function test", () => {
-    expect(number.bitCounting(12)).toBe("1100");
+test ("Function test 12 to return 2", () => {
+    expect(number.bitCounting(12)).toBe(2);
 });
