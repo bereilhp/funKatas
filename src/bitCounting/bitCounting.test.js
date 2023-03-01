@@ -32,3 +32,7 @@ test ("Function test 7 to return 3", () => {
 test ("Function test 9 to return 2", () => {
     expect(number.bitCounting(9)).toBe(2);
 });
+
+test ("Function test 10 to return 2", () => {
+    expect(number.bitCounting(10)).toBe(2);
+});
