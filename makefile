@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- spin.test.js
+	@npm test -- bitCounting.test.js
 
