@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- bitCounting.test.js
+	@npm test -- desOrder.test.js
 
