@@ -1,8 +1,8 @@
 {
   "name": "funkatas",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This repository contains Hands on Test Driven Development Katas using Node.js. ",
+  "main": "",
   "scripts": {
     "test": "jest --watch --coverage"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/bereilhp/funKatas.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "bereilhp",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bereilhp/funKatas/issues"
