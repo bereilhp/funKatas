@@ -10,5 +10,9 @@ test ("Object function", () => {
 });
 
 test ("Function test #1", () => {
-    expect(number.orderInv(1234)).toBe(1234);
+    expect(number.orderInv(1234)).toBe(4321);
+});
+
+test ("Function test #2", () => {
+    expect(number.orderInv(145263)).toBe(654321);
 });
