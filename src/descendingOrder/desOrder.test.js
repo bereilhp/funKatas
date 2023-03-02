@@ -5,6 +5,10 @@ test ("Object number", () => {
     expect(typeof(number)).toBe("object");
 });
 
-test ("Object number", () => {
+test ("Object function", () => {
     expect(typeof(number.orderInv)).toBe("function");
+});
+
+test ("Function test #1", () => {
+    expect(number.orderInv(1234)).toBe(1234);
 });
