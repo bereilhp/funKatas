@@ -16,3 +16,7 @@ test ("Function test #1", () => {
 test ("Function test #2", () => {
     expect(number.orderInv(145263)).toBe(654321);
 });
+
+test ("Function test #3", () => {
+    expect(number.orderInv(123456789)).toBe(987654321);
+});
