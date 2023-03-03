@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- desOrder.test.js
+	@npm test -- bowling.test.js
 
