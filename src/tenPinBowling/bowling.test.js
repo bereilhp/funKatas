@@ -9,6 +9,10 @@ test ("All number 0", () => {
     expect(bowlingScoreSimple("00 00 00 00 00 00 00 00 00 00")).toEqual(0);
 });
 
+test ("All number 0", () => {
+    expect(bowlingScoreSimple("11 11 11 11 11 11 11 11 11 11")).toEqual(20);
+});
+
 test ("All numbers and one spare", () => {
     expect(bowlingScoreSpare("6/ 45 63 54 62 71 81 72 54 34")).toBe(91);
 })
@@ -35,4 +39,8 @@ test ("All numbers and multiple strikes and extra strike end", () => {
 
 test ("All numbers and multiple strikes and extra strike end 2", () => {
     expect(bowlingScoreStrikeWithExtra("X 54 X 62 72 44 X 54 63 X 44")).toBe(126)
+});
+
+test ("All numbers and multiple strikes and extra strike end 3", () => {
+    expect(bowlingScoreStrikeWithExtra("X 54 X 62 72 44 X 54 63 X 91")).toBe(128)
 });
