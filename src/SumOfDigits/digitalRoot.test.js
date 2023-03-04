@@ -8,3 +8,7 @@ test ("Class Num", () => {
 test ("Class Num create object nums", () => {
     expect(typeof(nums)).toBe("object");
 });
+
+test ("Class Num create object nums", () => {
+    expect(nums.digitalRoot(24)).toBe(6);
+});
