@@ -1,5 +1,9 @@
 class Num {
     digitalRoot(num){
+        if(num === 0){
+            return 0;
+        };
+
         if(num > 9){
             let arr = num.toString().split("");
             let arrToNum = arr.map(Number);
@@ -8,8 +12,8 @@ class Num {
                 return sumArrNum;
             } else
                 return this.digitalRoot(sumArrNum);      
-        }
-    }
-}
+        };
+    };
+};
 
 module.exports = Num;

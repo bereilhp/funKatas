@@ -25,3 +25,7 @@ test ("Function digital root test complex number 2", () => {
     expect(nums.digitalRoot(493193)).toBe(2);
 });
 
+test ("Function digital root test 0", () => {
+    expect(nums.digitalRoot(0)).toBe(0);
+});
+
