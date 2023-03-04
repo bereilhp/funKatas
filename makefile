@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- bowling.test.js
+	@npm test -- digitalRoot.test.js
 
