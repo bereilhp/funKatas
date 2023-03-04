@@ -44,3 +44,11 @@ test ("All numbers and multiple strikes and extra strike end 2", () => {
 test ("All numbers and multiple strikes and extra strike end 3", () => {
     expect(bowlingScoreStrikeWithExtra("X 54 X 62 72 44 X 54 63 X 91")).toBe(128)
 });
+
+// test ("All numbers and multiple strikes and extra strike end 2", () => {
+//     expect(bowlingScoreStrikeWithExtra("X 54 X 62 72 44 X 54 63 9 1X")).toBe(126)
+// });
+
+// test ("All numbers and multiple strikes and extra strike end 2", () => {
+//     expect(bowlingScoreStrikeWithExtra("X 54 X 62 72 44 X 54 63 X XX")).toBe(126)
+// });
