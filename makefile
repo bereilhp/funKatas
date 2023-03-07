@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- digitalRoot.test.js
+	@npm test -- arrayDiff.test.js
 
