@@ -10,5 +10,9 @@ test ("type function object array", () => {
 });
 
 test ("type function object array", () => {
-    expect(array.diff([1,2,3], [1,2])).toBe("function");
+    expect(array.diff([1,2,3], [1,2])).toEqual([3]);
+});
+
+test ("type function object array", () => {
+    expect(array.diff([1,2,2,2,2,3], [1])).toEqual([2,3]);
 });
