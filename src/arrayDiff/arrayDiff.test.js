@@ -16,3 +16,7 @@ test ("type function object array", () => {
 test ("type function object array", () => {
     expect(array.diff([1,2,2,2,2,3], [1])).toEqual([2,3]);
 });
+
+test ("type function object array", () => {
+    expect(array.diff([1,2,2], [1])).toEqual([2]);
+});
