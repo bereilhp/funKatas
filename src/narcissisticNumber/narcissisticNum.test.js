@@ -10,9 +10,9 @@ test ("Function created", () => {
 });
 
 test ("Function test 153", () => {
-    expect(num.narcissitic(153)).toBe(153);
+    expect(num.narcissitic(153)).toBe(true);
 });
 
 test ("Function test 1652", () => {
-    expect(num.narcissitic(1652)).toBe(1938);
+    expect(num.narcissitic(1652)).toBe(false);
 });
