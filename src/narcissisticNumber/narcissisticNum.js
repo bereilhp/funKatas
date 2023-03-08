@@ -4,7 +4,7 @@ class Num {
         let arrNums = splitNumString.map(Number);
         let mulArrNums = arrNums.map(num => num**arrNums.length);
         let joinMulArr = mulArrNums.reduce((a,b) => a+b);
-        let ans = (joinMulArr === number)        
+        let ans = (joinMulArr === number);        
         return ans;
     }
 }
