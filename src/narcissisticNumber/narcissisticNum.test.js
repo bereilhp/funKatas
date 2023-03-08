@@ -25,4 +25,8 @@ test ("Function test 122", () => {
     expect(num.narcissitic(122)).toBe(false);
 });
 
+test ("Function test 487", () => {
+    expect(num.narcissitic(487)).toBe(false);
+});
+
 
