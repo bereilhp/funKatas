@@ -8,3 +8,7 @@ test ("Object created", () => {
 test ("Function created", () => {
     expect(typeof(num.narcissitic)).toBe("function");
 });
+
+test ("Function test", () => {
+    expect(num.narcissitic(153)).toBe(153);
+});

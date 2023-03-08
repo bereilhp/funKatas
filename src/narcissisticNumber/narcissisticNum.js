@@ -1,8 +1,10 @@
 class Num {
     narcissitic(number){
-        let splitNum = number.split("");
-        console.log(splitNum);
-        return number;
+        let splitNumString = number.toString().split("");
+        let arrNums = splitNumString.map(Number);
+        let mulArrNums = arrNums.map(num => num**arrNums.length);
+        let joinMulArr = mulArrNums.reduce((a,b) => a+b);
+        return joinMulArr;
     }
 }
 
