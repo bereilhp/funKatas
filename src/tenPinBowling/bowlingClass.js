@@ -79,4 +79,5 @@ class Bowling {
         return (result.map(Number).reduce((a, b) => a + b, 0) - result[result.length - 2] - result[result.length - 1]);
     }
 }
+
 module.exports = Bowling; 
