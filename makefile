@@ -7,5 +7,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- narcissisticNum.test.js
+	@npm test -- bowlingClass.test.js
 
