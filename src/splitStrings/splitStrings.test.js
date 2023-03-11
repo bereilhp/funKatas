@@ -14,5 +14,5 @@ test ("Object function created", () => {
 });
 
 test ("Testing function simple test", () => {
-    expect(str.split("Hello")).toBe("Hello");
+    expect(str.split("Hello")).toEqual(["He", "ll", "o_"]);
 });
