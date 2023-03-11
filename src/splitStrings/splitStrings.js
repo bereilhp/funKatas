@@ -1,9 +1,13 @@
 class Str {
 
     split(strin) {
-        let addLastChar = this.lastChar(strin);
-        let splitArr = this.splitArrTwo(addLastChar);
-        return splitArr;
+        if(strin == ""){
+            return []
+        }else {
+            let addLastChar = this.lastChar(strin);
+            let splitArr = this.splitArrTwo(addLastChar);
+            return splitArr;
+        }
     };
 
     splitArrTwo(strin) {

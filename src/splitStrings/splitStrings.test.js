@@ -21,7 +21,11 @@ test ("Testing function abc test", () => {
     expect(str.split("abc")).toEqual(["ab", "c_"]);
 });
 
-test ("Testing function abc test", () => {
+test ("Testing function abcdef test", () => {
     expect(str.split("abcdef")).toEqual(["ab", "cd", "ef"]);
+});
+
+test ("Testing function empty test", () => {
+    expect(str.split("")).toEqual([]);
 });
 
