@@ -22,6 +22,21 @@ class Str {
             return strin + "_";
         }
     }
+
+    splitter(str){
+        if(str == ""){
+            return [];
+        }else {
+            if(str.length %2 == 0){
+                let splitArr = str.match(/(..?)/g);
+                return splitArr
+            }else {
+                let addEnd = str + "_"
+                let splitArr = addEnd.match(/(..?)/g);
+                return splitArr;
+            }
+        }
+    }
 };
 
 module.exports = Str;

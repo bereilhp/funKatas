@@ -33,3 +33,7 @@ test ("Testing function abcdefg test", () => {
     expect(str.split("abcdefg")).toEqual(["ab", "cd", "ef", "g_"]);
 });
 
+test ("Testing function splitter test", () => {
+    expect(str.splitter("abcdefg")).toEqual(["ab", "cd", "ef", "g_"]);
+});
+
