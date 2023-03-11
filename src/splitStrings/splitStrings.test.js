@@ -29,3 +29,7 @@ test ("Testing function empty test", () => {
     expect(str.split("")).toEqual([]);
 });
 
+test ("Testing function abcdefg test", () => {
+    expect(str.split("abcdefg")).toEqual(["ab", "cd", "ef", "g_"]);
+});
+
