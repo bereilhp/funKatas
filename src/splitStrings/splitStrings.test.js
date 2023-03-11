@@ -12,3 +12,7 @@ test ("Object created", () => {
 test ("Object function created", () => {
     expect(typeof(str.split)).toBe("function");
 });
+
+test ("Testing function simple test", () => {
+    expect(str.split("Hello")).toBe("Hello");
+});
