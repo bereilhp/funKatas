@@ -1,11 +1,12 @@
 git: 
+	@git pull
 	@git add .
-	@git commit -S -am "$m" #m="your message"
+	@git commit -S -m "$m" #m="your message"
 	@git push 
 
 open:
 	@codium .
 
 test: 
-	@npm test -- bowlingClass.test.js
+	@npm test -- splitStrings.test.js
 
