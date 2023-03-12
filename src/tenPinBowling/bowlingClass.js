@@ -102,6 +102,28 @@ class Bowling {
 
         return (result.map(Number).reduce((a, b) => a + b, 0));
     }
+
+    bowlingScoreStrikeWithExtraSpareAndStrike(a) {
+        let arr = this.splitter(a);
+        let result = [];
+        for (let i = 0; i <= (arr.length - 1); i++) {
+            if (arr[i].charAt(0) == 'X') {
+                let strike = 10;
+                result.push(strike.toString());
+                result.push(arr[i + 1].charAt(0));
+                result.push(arr[i + 1].charAt(1));
+            } else if(arr[i].charAt(1) == "X"){
+                let strike = 10;
+                result.push(arr[i].charAt(0))
+                result.push(strike);
+            } else {
+                result.push(arr[i].charAt(0));
+                result.push(arr[i].charAt(1));
+            }
+        }
+
+        return (result.map(Number).reduce((a, b) => a + b, 0));
+    }
 }
 
 module.exports = Bowling; 
