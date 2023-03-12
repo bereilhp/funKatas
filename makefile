@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- splitStrings.test.js
+	@npm test -- bowlingClass.test.js
 

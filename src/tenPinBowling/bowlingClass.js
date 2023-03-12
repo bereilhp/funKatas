@@ -1,6 +1,12 @@
 class Bowling {
+
+    splitter(a) {
+        let arr = a.split(" "); //.map(Number);
+        return arr
+    }
+    
     bowlingScoreSimple(a) {
-        const arr = a.split(" "); //.map(Number);
+        let arr = this.splitter(a);
         let result = []
         for (let i = 0; i <= (arr.length - 1); i++) {
             result.push(arr[i].charAt(0));
@@ -10,7 +16,7 @@ class Bowling {
     }
 
     bowlingScoreSpare(a) {
-        const arr = a.split(" "); //.map(Number);
+        let arr = this.splitter(a);
         let result = [];
         for (let i = 0; i <= (arr.length - 1); i++) {
             if (arr[i].charAt(1) == '/') {
@@ -27,7 +33,7 @@ class Bowling {
     }
 
     bowlingScoreSpareWithExtra(a) {
-        const arr = a.split(" "); //.map(Number);
+        let arr = this.splitter(a);
         let result = [];
         for (let i = 0; i <= (arr.length - 1); i++) {
             if (arr[i].charAt(1) == '/') {
@@ -45,7 +51,7 @@ class Bowling {
 
 
     bowlingScoreStrike(a) {
-        const arr = a.split(" "); //.map(Number);
+        let arr = this.splitter(a);
         let result = []
         for (let i = 0; i <= (arr.length - 1); i++) {
             if (arr[i].charAt(0) == 'X') {
@@ -62,7 +68,7 @@ class Bowling {
     }
 
     bowlingScoreStrikeWithExtra(a) {
-        const arr = a.split(" "); //.map(Number);
+        let arr = this.splitter(a);
         let result = []
         for (let i = 0; i <= (arr.length - 1); i++) {
             if (arr[i].charAt(0) == 'X') {
