@@ -2,7 +2,7 @@ class Bowling {
 
     splitter(a) {
         let arr = a.split(" "); //.map(Number);
-        return arr
+        return arr;
     }
 
     bowlingScoreSimple(a) {
@@ -112,7 +112,7 @@ class Bowling {
                 result.push(strike.toString());
                 result.push(arr[i + 1].charAt(0));
                 result.push(arr[i + 1].charAt(1));
-            } else if(arr[i].charAt(1) == "X"){
+            } else if (arr[i].charAt(1) == "X") {
                 let strike = 10;
                 result.push(arr[i].charAt(0))
                 result.push(strike);
@@ -123,6 +123,28 @@ class Bowling {
         }
 
         return (result.map(Number).reduce((a, b) => a + b, 0));
+    }
+
+    bowlingScoreStrikeWithExtraStrikeAndStrike(a) {
+        let arr = this.splitter(a);
+        if((arr[10].charAt(0) == "X") && (arr[10].charAt(1) == "X")){
+            arr.pop()
+            arr.pop()
+        };
+        let result = [];
+        for (let i = 0; i <= (arr.length - 1); i++) {
+            if (arr[i].charAt(0) == 'X') {
+                let strike = 10;
+                result.push(strike.toString());
+                result.push(arr[i + 1].charAt(0));
+                result.push(arr[i + 1].charAt(1));
+            } else {
+                result.push(arr[i].charAt(0));
+                result.push(arr[i].charAt(1));
+            }
+        }
+
+        return (result.map(Number).reduce((a, b) => a + b, 0) + 30);
     }
 }
 
