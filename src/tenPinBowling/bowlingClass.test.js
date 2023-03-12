@@ -41,6 +41,11 @@ test ("Multiple spares and extra end", () => {
     expect(bolos.bowlingScoreSpareWithExtra(score)).toBe(107)
 });
 
+test ("Multiple spares and extra end 2", () => {
+    score = "72 54 6/ 6/ 72 72 53 54 63 4/ 5"
+    expect(bolos.bowlingScoreSpareWithExtra(score)).toBe(110)
+});
+
 test ("All numbers one strike", () => {
     score = "X 54 63 62 72 72 53 54 63 42"
     expect(bolos.bowlingScoreStrike(score)).toBe(95)
@@ -66,9 +71,9 @@ test ("All numbers and multiple strikes and extra strike end 3", () => {
     expect(bolos.bowlingScoreStrikeWithExtra(score)).toBe(128)
 });
 
-// test ("All numbers and multiple strikes and extra strike end 2", () => {
-//     expect(bolos.bowlingScoreStrikeWithExtra("X 54 X 62 72 44 X 54 63 9 1X")).toBe(126)
-// });
+test ("All numbers and multiple strikes and extra spare end", () => {
+    expect(bolos.bowlingScoreStrikeWithExtraSpare("X 54 X 62 72 44 X 54 63 9 10")).toBe(118)
+ });
 
 // test ("All numbers and multiple strikes and extra strike end 2", () => {
 //     expect(bolos.bowlingScoreStrikeWithExtra("X 54 X 62 72 44 X 54 63 X XX")).toBe(126)
