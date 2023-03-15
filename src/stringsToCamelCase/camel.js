@@ -5,8 +5,12 @@ class Camel {
         let ans = [];
 
         split.forEach(element => {
-            ans.push(element.charAt(0).toUpperCase());
-            ans.push(element.slice(1))
+            if(ans.length === 0){
+                ans.push(element);
+            }else {
+                ans.push(element.charAt(0).toUpperCase());
+                ans.push(element.slice(1));
+            }
         });
         
         return ans.join("");
