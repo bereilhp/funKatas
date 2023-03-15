@@ -1,6 +1,7 @@
 class Camel {
     camelCase (string){
-        let split = string.split("-");
+        let regex = /-|_|-_/gm
+        let split = string.split(regex);
         let ans = [];
 
         split.forEach(element => {
