@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- bowlingClass.test.js
+	@npm test -- camel.test.js
 
