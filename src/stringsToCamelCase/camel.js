@@ -1,6 +1,8 @@
 class Camel {
     camelCase (string){
-        return string;
+        let split = string.split("-")
+        let a = string.charAt(0).toUpperCase()
+        return split;
     }
 }
 

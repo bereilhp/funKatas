@@ -10,6 +10,10 @@ test ("Check Camel Class creates object word working properly", () => {
 });
 
 test ("Check object word function", () => {
-    expect(typeof(word.camelCase)).toBe("object");
+    expect(typeof(word.camelCase)).toBe("function");
+});
+
+test ("Check object word function", () => {
+    expect(word.camelCase("the-stealth-warrior")).toBe("function");
 });
 
