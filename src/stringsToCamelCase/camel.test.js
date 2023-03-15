@@ -13,7 +13,9 @@ test ("Check object word function", () => {
     expect(typeof(word.camelCase)).toBe("function");
 });
 
-test ("Check object word function", () => {
-    expect(word.camelCase("the-stealth-warrior")).toBe("function");
+test ("Check function for camel case test 1", () => {
+    expect(word.camelCase("the-stealth-warrior")).toBe("TheStealthWarrior");
 });
+
+
 
