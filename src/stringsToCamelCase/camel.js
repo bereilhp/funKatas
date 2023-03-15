@@ -1,18 +1,18 @@
 class Camel {
-    camelCase (string){
+    camelCase(string) {
         let regex = /-|_|-_/gm
         let split = string.split(regex);
         let ans = [];
 
         split.forEach(element => {
-            if(ans.length === 0){
+            if (ans.length === 0) {
                 ans.push(element);
-            }else {
+            } else {
                 ans.push(element.charAt(0).toUpperCase());
                 ans.push(element.slice(1));
             }
         });
-        
+
         return ans.join("");
     }
 }
