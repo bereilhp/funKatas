@@ -12,8 +12,8 @@ class Num {
         ans = ans + 1;
         
         if(multp > 9){
-            return this.persistent(multp, ans);
-        };
+            return this.persistent(multp, ans); 
+        };        
 
         return ans;
     }
