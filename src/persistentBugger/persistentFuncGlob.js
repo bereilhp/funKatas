@@ -19,7 +19,6 @@ function persistent(number) {
     ans = 0;
 
     return finalAns;
-    
 }
 
 module.exports = persistent;

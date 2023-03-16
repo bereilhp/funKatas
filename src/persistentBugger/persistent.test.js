@@ -35,7 +35,7 @@ test ("Function Glob test 39", () => {
 });
 
 test ("Function Glob test 10", () => {
-    expect(persistentGlob(10)).toBe(1);
+    expect(persistentGlob(999)).toBe(4);
 });
 
 test ("Function GLob test 25", () => {
