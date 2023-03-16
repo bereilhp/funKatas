@@ -9,3 +9,7 @@ test ("Create object island", () => {
     expect(typeof(island)).toBe("object");
 });
 
+test ("Create object island", () => {
+    expect(typeof(island.analyzer)).toBe("function");
+});
+

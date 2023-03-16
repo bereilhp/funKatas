@@ -5,3 +5,4 @@ class Island {
 };
 
 module.exports = Island;
+
