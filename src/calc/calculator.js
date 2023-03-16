@@ -14,7 +14,6 @@ const div = (first,second) => {
     return first / second;
 }
 
-
 const mod = (first,second) => {
     return first % second;
 }
