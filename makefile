@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- alphabet.test.js
+	@npm test -- islands.test.js
 
