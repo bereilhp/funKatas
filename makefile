@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- persistent.test.js
+	@npm test -- object.test.js
 

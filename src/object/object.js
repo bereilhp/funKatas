@@ -13,4 +13,9 @@ car.sayType = function(){
     return car.type;
 }
 
-module.exports = car;
+const bike = {
+    sayType: function(){
+    }
+}
+
+module.exports = { car,bike };
