@@ -11,3 +11,7 @@ test ("letter.abecedario type", () => {
 test ("letter.abecedario type", () => {
     expect(letter.abecedario(['a','b','c','d','f'])).toBe('e');
 });
+
+test ("letter.abecedario type", () => {
+     expect(letter.abecedario(['O','Q','R','S'])).toBe('P');
+});
