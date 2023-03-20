@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- letter.test.js
+	@npm test -- prime.test.js
 
