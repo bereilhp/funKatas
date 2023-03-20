@@ -7,3 +7,7 @@ test ("Type prime", () => {
 test ("Type prime.is_prime", () => {
     expect(typeof(prime.is_prime)).toBe("function");
 });
+
+test ("prime.is_prime test 2", () => {
+    expect(prime.is_prime(6)).toBe(false);
+});
