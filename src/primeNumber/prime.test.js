@@ -23,3 +23,7 @@ test ("prime.is_prime test 1", () => {
 test ("prime.is_prime test 7", () => {
     expect(prime.is_prime(7)).toBe(true);
 });
+
+test ("prime.is_prime test 43", () => {
+    expect(prime.is_prime(43)).toBe(true);
+});
