@@ -1,3 +1,5 @@
-test ("Example", () => {
-    expect("test").toBe("test");
+const num = require("./zeros");
+
+test ("typeof num", () => {
+    expect(typeof(num)).toBe("object");
 });
