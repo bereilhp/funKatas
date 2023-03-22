@@ -31,3 +31,16 @@ test ("num.moveZeros move zeros test letter and num", () => {
 test ("num.moveZeros move zeros test true and nums", () => {
     expect(num.moveZeros([0,0,0,0,true,1,2])).toEqual([true, 1, 2, 0, 0, 0, 0]);
 });
+
+test ("num.moveZeros move zeros test false and nums", () => {
+    expect(num.moveZeros([0,0,0,0,[],1,2])).toEqual([[], 1, 2, 0, 0, 0, 0]);
+});
+
+test ("num.moveZeros move zeros test false and nums", () => {
+    expect(num.moveZeros([0,0,0,0,false,1,2])).toEqual([false, 1, 2, 0, 0, 0, 0]);
+});
+
+test ("num.moveZeros move zeros fixes test", () => {
+    expect(num.moveZeros(["0", 1,2,3])).toEqual(["0", 1, 2, 3]);
+});
+
