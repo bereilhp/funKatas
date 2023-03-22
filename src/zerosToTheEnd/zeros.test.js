@@ -15,3 +15,7 @@ test ("num.moveZeros simplest test", () => {
 test ("num.moveZeros move zeros test", () => {
     expect(num.moveZeros([0,0,0,0,1])).toEqual([1,0,0,0,0]);
 });
+
+test ("num.moveZeros move zeros test", () => {
+    expect(num.moveZeros([0,0,0,0,1,4,5])).toEqual([1, 4, 5, 0, 0, 0, 0]);
+});
