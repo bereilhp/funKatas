@@ -43,4 +43,3 @@ test ("num.moveZeros move zeros test false and nums", () => {
 test ("num.moveZeros move zeros fixes test", () => {
     expect(num.moveZeros(["0", 1,2,3])).toEqual(["0", 1, 2, 3]);
 });
-
