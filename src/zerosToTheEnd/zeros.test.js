@@ -23,3 +23,7 @@ test ("num.moveZeros move zeros test many nums", () => {
 test ("num.moveZeros move zeros test letter", () => {
     expect(num.moveZeros([0,0,0,0,"a"])).toEqual(["a", 0, 0, 0, 0]);
 });
+
+test ("num.moveZeros move zeros test letter and num", () => {
+    expect(num.moveZeros([0,0,0,0,"a",1,2])).toEqual(["a",1,2, 0, 0, 0, 0]);
+});
