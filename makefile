@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- zeros.test.js
+	@npm test -- conversorIPv4.test.js
 
