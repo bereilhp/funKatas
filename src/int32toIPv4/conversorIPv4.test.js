@@ -19,3 +19,7 @@ test ("Test ipv4 conversor small num", () => {
 test ("Test ipv4 conversor random", () => {
     expect(conversor.ipv4(748867874)).toBe("44.162.209.34");
 });
+
+test ("Test ipv4 conversor random", () => {
+    expect(conversor.ipv4(32)).toBe("0.0.0.32");
+});
