@@ -11,3 +11,7 @@ test ("typeof conversor.ipv4", () => {
 test ("Test ipv4 conversor", () => {
     expect(conversor.ipv4(2149583361)).toBe("128.32.10.1");
 });
+
+test ("Test ipv4 conversor small num", () => {
+    expect(conversor.ipv4(0)).toBe("0.0.0.0");
+});

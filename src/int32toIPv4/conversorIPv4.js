@@ -1,5 +1,8 @@
 const conversor = {
     ipv4 : function(num){
+        if(num == 0){
+            return "0.0.0.0"
+        }
         let numToBin = num.toString(2);
         let newArr = numToBin.split("");
         
