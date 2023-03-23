@@ -12,3 +12,8 @@ test ("typeof conversor.rgb", () => {
     expect(conversor.rgb(255,255,255)).toBe("FFFFFF");
 });
 
+test ("typeof conversor.rgb", () => {
+    expect(conversor.rgb(0,0,0)).toBe("000000");
+});
+
+
