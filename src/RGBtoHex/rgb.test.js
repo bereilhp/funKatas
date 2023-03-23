@@ -1,3 +1,5 @@
-test ("Example", () => {
-    expect("test").toBe("test");
+const conversor = require("./rgb.js");
+
+test ("typeof conversor", () => {
+    expect(typeof(conversor)).toBe("object");
 });
