@@ -20,4 +20,6 @@ test ("typeof conversor.rgb 9400D3", () => {
     expect(conversor.rgb(148,0,211)).toBe("9400D3");
 });
 
-
+test ("typeof conversor.rgb 9400D3", () => {
+    expect(conversor.rgb(173,255,47)).toBe("9400D3");
+});
