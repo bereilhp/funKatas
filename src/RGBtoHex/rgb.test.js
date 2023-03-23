@@ -23,3 +23,17 @@ test ("typeof conversor.rgb 9400D3", () => {
 test ("typeof conversor.rgb ADFF2F", () => {
     expect(conversor.rgb(173,255,47)).toBe("ADFF2F");
 });
+
+
+test ("typeof conversor.rgb 255 < ", () => {
+    expect(conversor.rgb(256,255,47)).toBe("FFFF2F");
+});
+
+test ("typeof conversor.rgb 255 < ", () => {
+    expect(conversor.rgb(44,11,200)).toBe("2C0BC8");
+});
+
+test ("typeof conversor.rgb 255 < ", () => {
+    expect(conversor.rgb(300,12,400)).toBe("FF0CFF");
+});
+
