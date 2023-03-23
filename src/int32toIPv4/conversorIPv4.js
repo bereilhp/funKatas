@@ -4,7 +4,20 @@ const conversor = {
             return "0.0.0.0"
         }
         let numToBin = num.toString(2);
-        let newArr = numToBin.split("");
+        let num32bin;
+
+        if(numToBin.length != 32){
+            let diff = 32 - numToBin.length
+            let add = "0".repeat(diff);
+            num32bin = add + numToBin
+        }
+        
+        let newArr;
+        
+        if(num32bin == undefined){
+            newArr = numToBin.split("");
+        }else newArr = num32bin.split("")
+        
         
         let splitArr32 = newArr.slice(0,8).join("");
         let splitArr24 = newArr.slice(8,16).join("");
