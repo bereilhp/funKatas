@@ -7,3 +7,8 @@ test ("typeof conversor", () => {
 test ("typeof conversor.rgb", () => {
     expect(typeof(conversor.rgb)).toBe("function");
 });
+
+test ("typeof conversor.rgb", () => {
+    expect(conversor.rgb(255,255,255)).toBe("FFFFFF");
+});
+
