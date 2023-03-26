@@ -39,5 +39,5 @@ test ("typeof conversor.rgb 255 < ", () => {
 
 
 test ("typeof conversor.rgb < 0 ", () => {
-    expect(conversor.rgb(1,1,-1)).toBe("010100");
+    expect(conversor.rgb(20,9,130)).toBe("140982");
 });

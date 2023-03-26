@@ -5,16 +5,16 @@ const conversor = {
         let num3 = third;
 
         if (first < 0) {
-            num1 = 0
-        } else if (first < 9) {
+            num1 = "00"
+        } else if (first <= 9) {
             num1 = "0" + first;
         } else if (first > 255) {
             num1 = 255;
         }
 
         if (second < 0) {
-            num2 = 0
-        } else if (second < 9) {
+            num2 = "00"
+        } else if (second <= 9) {
             num2 = "0" + second;
         } else if (second > 255) {
             num2 = 255;
@@ -22,7 +22,7 @@ const conversor = {
 
         if (third < 0) {
             num3 = "00"
-        } else if (third < 9) {
+        } else if (third <= 9) {
             num3 = "0" + third;
         } else if (third > 255) {
             num3 = 255;
