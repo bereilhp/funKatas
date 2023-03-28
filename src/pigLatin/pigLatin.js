@@ -1,5 +1,7 @@
 const pigLatin = {
+    
     pigIt : function(string){
+
         let splitter = string.split(" ");
         let ans = [];
 
