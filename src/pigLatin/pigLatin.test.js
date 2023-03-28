@@ -8,6 +8,6 @@ test ("Typeof pigLatin.pigIt", () => {
     expect(typeof(pigLatin.pigIt)).toBe("function");
 });
 
-test ("Typeof pigLatin.pigIt", () => {
+test ("Test pigLatin.pigIt", () => {
     expect(pigLatin.pigIt("Pig latin is cool")).toBe("igPay atinlay siay oolcay");
 });
