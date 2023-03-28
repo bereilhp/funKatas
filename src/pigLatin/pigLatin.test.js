@@ -1,4 +1,4 @@
-const pigLatin = require("./pigLatin");
+const { pigLatin } = require("./pigLatin");
 
 test ("Typeof pigLatin", () => {
     expect(typeof(pigLatin)).toBe("object");

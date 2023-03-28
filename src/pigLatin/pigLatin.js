@@ -1,5 +1,5 @@
 const pigLatin = {
-    
+
     pigIt : function(string){
 
         let splitter = string.split(" ");
@@ -25,4 +25,4 @@ const pigLatin = {
     }
 }
 
-module.exports = pigLatin;
+module.exports = { pigLatin };
