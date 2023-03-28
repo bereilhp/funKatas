@@ -14,11 +14,11 @@ const pigLatin = {
         let punctuationFix = [];
 
         aySplit.forEach(e => {
-            if(e == "!ay"){
+            if(e == "!ay" || e == "?ay"){
                 punctuationFix.push(e.slice(0,1))
             }else punctuationFix.push(e)
         });
-        
+
         return punctuationFix.join(" ");
     }
 }

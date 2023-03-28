@@ -15,3 +15,7 @@ test ("Test pigLatin.pigIt", () => {
 test ("Test pigLatin.pigIt", () => {
     expect(pigLatin.pigIt("Hello world !")).toBe("elloHay orldway !");
 });
+
+test ("Test pigLatin.pigIt", () => {
+    expect(pigLatin.pigIt("Hello world ?")).toBe("elloHay orldway ?");
+});
