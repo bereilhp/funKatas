@@ -9,8 +9,17 @@ const pigLatin = {
             ans.push(element + first);  
         });
         
-        let aySplit = ans.map(e => e + "ay")
-        return aySplit.join(" ");
+        let aySplit = ans.map(e => e + "ay");
+
+        let punctuationFix = [];
+
+        aySplit.forEach(e => {
+            if(e == "!ay"){
+                punctuationFix.push(e.slice(0,1))
+            }else punctuationFix.push(e)
+        });
+        
+        return punctuationFix.join(" ");
     }
 }
 
