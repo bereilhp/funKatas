@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- pigLatin.test.js
+	@npm test -- baker.test.js
 
