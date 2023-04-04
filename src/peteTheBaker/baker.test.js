@@ -21,3 +21,10 @@ test ("Function cake all the same except one ingredient", () => {
         {flour: 500, sugar: 200}
         )).toEqual(0);
 });
+
+test ("Function cake more ingredients than recipe", () => {
+    expect(bake.cake(
+        {flour: 500},
+        {flour: 500, sugar: 200}
+        )).toEqual(1);
+});

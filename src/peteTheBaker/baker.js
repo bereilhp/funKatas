@@ -5,6 +5,8 @@ const bake = {
 
         if (JSON.stringify(valueIngredients) == JSON.stringify(valueRecipe)) {
             return 1;
+        }else if(valueIngredients.length >= valueRecipe.length){
+            return 1;
         } else
             return 0;
     }
