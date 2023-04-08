@@ -15,3 +15,7 @@ test ("Function test", () => {
 test ("Function test 2", () => {
     expect(ext.diff([23, 3, 19, 21, 16])).toBe(20);
 });
+
+test ("Function test 3", () => {
+    expect(ext.diff([1, 434, 555, 34, 112])).toBe(554);
+});
