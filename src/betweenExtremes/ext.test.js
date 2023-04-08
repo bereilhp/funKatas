@@ -24,6 +24,12 @@ test ("Function test 4", () => {
     expect(ext.diff([1,2])).toBe(1);
 });
 
-test ("Function test 4", () => {
+test ("Function test 5", () => {
     expect(ext.diff([0,2])).toBe(2);
 });
+
+test ("Function test 6", () => {
+    expect(ext.diff([21, 34, 54, 43, 26, 12])).toBe(42);
+});
+
+
