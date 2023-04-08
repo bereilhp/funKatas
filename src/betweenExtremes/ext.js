@@ -4,4 +4,4 @@ const extreme = {
     }
 }
 
-module.exports = { extreme }; 
+module.exports = extreme; 
