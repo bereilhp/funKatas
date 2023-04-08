@@ -1,6 +1,8 @@
 const extreme = {
-    diff : function () { 
-        return true
+    diff : function (array) { 
+        let biggest = Math.max(...array);
+        let smallest = Math.min(...array);
+        return biggest - smallest; 
     }
 }
 
