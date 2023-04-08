@@ -19,3 +19,7 @@ test ("Function test 2", () => {
 test ("Function test 3", () => {
     expect(ext.diff([1, 434, 555, 34, 112])).toBe(554);
 });
+
+test ("Function test 4", () => {
+    expect(ext.diff([1,2])).toBe(1);
+});
