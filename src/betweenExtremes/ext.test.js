@@ -32,4 +32,8 @@ test ("Function test 6", () => {
     expect(ext.diff([21, 34, 54, 43, 26, 12])).toBe(42);
 });
 
+test ("Function test 6", () => {
+    expect(ext.diff([-1, -41, -77, -100])).toBe(99);
+});
+
 
