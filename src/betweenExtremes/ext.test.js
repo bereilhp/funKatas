@@ -23,3 +23,7 @@ test ("Function test 3", () => {
 test ("Function test 4", () => {
     expect(ext.diff([1,2])).toBe(1);
 });
+
+test ("Function test 4", () => {
+    expect(ext.diff([0,2])).toBe(2);
+});
