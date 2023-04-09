@@ -1,5 +1,5 @@
 function fuel(nearestPump, mpg, gallonsLeft){
-    fuelTotal = mpg * gallonsLeft;
+    let fuelTotal = mpg * gallonsLeft;
     return nearestPump <= fuelTotal;
 }
 

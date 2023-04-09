@@ -1,5 +1,5 @@
 const Num = require("./persistent");
-const persistentGlob = require("./persistentFuncGlob")
+const persistentGlob = require("./persistentFuncGlob");
 let num = new Num;
 
 test ("Object created", () => {

@@ -1,13 +1,13 @@
 class Island {
     splitMatrix(matrix) {
-        let splitter = matrix
-        return splitter
+        let splitter = matrix;
+        return splitter;
 
     }
 
     analyzer(matrix) {
         let split = this.splitMatrix(matrix);
-        let ans = []
+        let ans = [];
         split.forEach(element => {
             if (element == 0) {
                 ans.push("~");
@@ -15,11 +15,11 @@ class Island {
                 ans.push("X");
         });
         
-        let stringy = ans.join("")
+        let stringy = ans.join("");
 
         return stringy;
-    };
-};
+    }
+}
 
 module.exports = Island;
 

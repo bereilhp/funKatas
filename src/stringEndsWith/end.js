@@ -1,4 +1,4 @@
-const stringy = {}
+const stringy = {};
 
 stringy.endWith = function(start,end){
     let startArr = start.split("");

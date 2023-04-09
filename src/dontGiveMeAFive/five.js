@@ -8,7 +8,7 @@ function count(a,b) {
     const index = arr.indexOf(5); //return 0 if item is found
     
     if(index > -1){
-        arr.splice(index,1)
+        arr.splice(index,1);
     }
 
     //console.log(arr)

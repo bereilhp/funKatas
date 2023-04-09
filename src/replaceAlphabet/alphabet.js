@@ -1,6 +1,6 @@
 class Alphabet {
     abecedario() {
-        let abc = "abcdefghijklmnopqrstuvwxyz"
+        let abc = "abcdefghijklmnopqrstuvwxyz";
         let splitABC = abc.split("");
         return splitABC;
     }
@@ -13,12 +13,12 @@ class Alphabet {
         splitString.forEach(letra => {
             abc.forEach(abece => {
                 if (letra.toLowerCase() == abece) {
-                    ans.push(abc.indexOf(abece)+1)
-                };
+                    ans.push(abc.indexOf(abece)+1);
+                }
             });
         });
         
-        return ans.join(" ")
+        return ans.join(" ");
     }
 }
 

@@ -8,6 +8,6 @@ class Spin {
         }
         return textSplit.join(" ");    
     }        
-};
+}
 
 module.exports = Spin;

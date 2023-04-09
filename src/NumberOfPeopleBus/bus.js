@@ -6,7 +6,7 @@ const bus = {};
  * @param {Integer} peopleleft 
  * @returns Number of people left on the bus
  */
-bus.numberOfPeople = function(busList, peopleleft){
+bus.numberOfPeople = function(busList/*, peopleleft*/){
     let peopleOn = 0;
     let peopleOff = 0;
 
@@ -16,6 +16,6 @@ bus.numberOfPeople = function(busList, peopleleft){
     } 
 
     return peopleOn - peopleOff; 
-}
+};
 
 module.exports =  bus;

@@ -33,7 +33,7 @@ test ("Test if the object function works properly with strings", () => {
 test ("Test if the object function works properly with lots of numbers", () => {
     expect(array.arraySimilar(arr1, arr2)).toEqual(true);
     expect(array.arraySimilar(arr2, arr3)).toEqual(false);
-    expect(array.arraySimilar(arr3, arr4)).toEqual(false)
+    expect(array.arraySimilar(arr3, arr4)).toEqual(false);
 });
 
 

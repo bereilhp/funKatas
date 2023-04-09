@@ -1,4 +1,4 @@
-const { add, testa } = require("./adders.js")
+const { add, testa } = require("./adders.js");
 
 test("Function exist", () => {
     expect(typeof(add)).toBe("function"); 

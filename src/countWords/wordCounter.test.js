@@ -1,8 +1,8 @@
 const Words = require("./wordCounter");
-let word = new Words("string")
+let word = new Words("string");
 
 beforeEach(() => {
-    let word = new Words("string")
+    let word = new Words("string");
     return word;
 });
 
@@ -35,11 +35,11 @@ test ("Test object word function counter words #1", () => {
 });
 
 test ("Test object word function counter words #2", () => {
-    expect(word.counter('No results for search term `s`')).toEqual(6);
+    expect(word.counter("No results for search term `s`")).toEqual(6);
 });
 
 test ("Test object word function counter words #3", () => {
-    expect(word.counter(' Hello')).toEqual(1);
+    expect(word.counter(" Hello")).toEqual(1);
 });
 
 

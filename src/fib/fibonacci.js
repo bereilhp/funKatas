@@ -6,7 +6,7 @@ fib.Nnumber = function(number){
         arr[i] = arr[i - 2] + arr[i - 1]; 
     }
     return arr[number-1];
-}
+};
 
 
 module.exports = fib;

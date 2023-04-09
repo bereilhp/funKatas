@@ -20,17 +20,17 @@ function tennisScore(score){
     }else if(score === "Deuce" || (score === "deuce")){
         return 6;
     }else if (score === "Advantage p1"){
-        return 7
+        return 7;
     }else if(score === "Advantage p2"){
         return 7;
     }else if(p1ScoreNum == 5 && p2ScoreNum == 3){
-        return `Game Player 1. He won by ${ p1ScoreNum - p2ScoreNum } points`
+        return `Game Player 1. He won by ${ p1ScoreNum - p2ScoreNum } points`;
     }else if(p2ScoreNum === 5 && p1ScoreNum == 3){
-        return `Game Player 2. He won by ${p2ScoreNum - p1ScoreNum} points`
+        return `Game Player 2. He won by ${p2ScoreNum - p1ScoreNum} points`;
     }else if(p1ScoreNum == 5){
-        return `Game Player 1. He won by ${ (p1ScoreNum-1) - p2ScoreNum } points`
+        return `Game Player 1. He won by ${ (p1ScoreNum-1) - p2ScoreNum } points`;
     }else if(p2ScoreNum == 5){
-        return `Game Player 2. He won by ${(p2ScoreNum-1) - p1ScoreNum} points`
+        return `Game Player 2. He won by ${(p2ScoreNum-1) - p1ScoreNum} points`;
     }
     
     return p1ScoreNum + p2ScoreNum;
@@ -43,16 +43,13 @@ function tennisScoreGames(score){
     let p2GameScore = Number(splitScore[1]);
 
     if(p1GameScore > p2GameScore ){
-        return `Player p1 is winning by ${p1GameScore-p2GameScore} games and the score is ${score}`
+        return `Player p1 is winning by ${p1GameScore-p2GameScore} games and the score is ${score}`;
     }else if (p1GameScore < p2GameScore){
-        return `Player p2 is winning by ${p2GameScore-p1GameScore} games and the score is ${score}`
+        return `Player p2 is winning by ${p2GameScore-p1GameScore} games and the score is ${score}`;
     } else 
-        return `They are tied in games and the score is ${score}`
+        return `They are tied in games and the score is ${score}`;
      
 }
 
-function tennisScoreSet(score){
-    
-}
 
 module.exports = { tennisScore, tennisScoreGames };

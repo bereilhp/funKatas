@@ -1,4 +1,4 @@
-const stringy = require("./end.js")
+const stringy = require("./end.js");
 test ("Example", () => {
     expect("test").toBe("test");
 });

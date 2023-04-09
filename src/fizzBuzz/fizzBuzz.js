@@ -6,8 +6,8 @@ const x = (a) => {
     }else if(a % 5 == 0) {
         return "buzz";
     }else 
-        return a
+        return a;
     
-}
+};
 
 module.exports = x;

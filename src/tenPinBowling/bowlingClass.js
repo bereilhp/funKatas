@@ -7,7 +7,7 @@ class Bowling {
 
     bowlingScoreSimple(a) {
         let arr = this.splitter(a);
-        let result = []
+        let result = [];
         for (let i = 0; i <= (arr.length - 1); i++) {
             result.push(arr[i].charAt(0));
             result.push(arr[i].charAt(1));
@@ -19,7 +19,7 @@ class Bowling {
         let arr = this.splitter(a);
         let result = [];
         for (let i = 0; i <= (arr.length - 1); i++) {
-            if (arr[i].charAt(1) == '/') {
+            if (arr[i].charAt(1) == "/") {
                 result.push(arr[i].charAt(0));
                 let diferencia = 10 - arr[i].charAt(0);
                 result.push(diferencia.toString());
@@ -36,7 +36,7 @@ class Bowling {
         let arr = this.splitter(a);
         let result = [];
         for (let i = 0; i <= (arr.length - 1); i++) {
-            if (arr[i].charAt(1) == '/') {
+            if (arr[i].charAt(1) == "/") {
                 result.push(arr[i].charAt(0));
                 let diferencia = 10 - arr[i].charAt(0);
                 result.push(diferencia.toString());
@@ -52,9 +52,9 @@ class Bowling {
 
     bowlingScoreStrike(a) {
         let arr = this.splitter(a);
-        let result = []
+        let result = [];
         for (let i = 0; i <= (arr.length - 1); i++) {
-            if (arr[i].charAt(0) == 'X') {
+            if (arr[i].charAt(0) == "X") {
                 let strike = 10;
                 result.push(strike.toString());
                 result.push(arr[i + 1].charAt(0));
@@ -69,9 +69,9 @@ class Bowling {
 
     bowlingScoreStrikeWithExtra(a) {
         let arr = this.splitter(a);
-        let result = []
+        let result = [];
         for (let i = 0; i <= (arr.length - 1); i++) {
-            if (arr[i].charAt(0) == 'X') {
+            if (arr[i].charAt(0) == "X") {
                 let strike = 10;
                 result.push(strike.toString());
                 result.push(arr[i + 1].charAt(0));
@@ -87,9 +87,9 @@ class Bowling {
 
     bowlingScoreStrikeWithExtraSpare(a) {
         let arr = this.splitter(a);
-        let result = []
+        let result = [];
         for (let i = 0; i <= (arr.length - 1); i++) {
-            if (arr[i].charAt(0) == 'X') {
+            if (arr[i].charAt(0) == "X") {
                 let strike = 10;
                 result.push(strike.toString());
                 result.push(arr[i + 1].charAt(0));
@@ -107,14 +107,14 @@ class Bowling {
         let arr = this.splitter(a);
         let result = [];
         for (let i = 0; i <= (arr.length - 1); i++) {
-            if (arr[i].charAt(0) == 'X') {
+            if (arr[i].charAt(0) == "X") {
                 let strike = 10;
                 result.push(strike.toString());
                 result.push(arr[i + 1].charAt(0));
                 result.push(arr[i + 1].charAt(1));
             } else if (arr[i].charAt(1) == "X") {
                 let strike = 10;
-                result.push(arr[i].charAt(0))
+                result.push(arr[i].charAt(0));
                 result.push(strike);
             } else {
                 result.push(arr[i].charAt(0));
@@ -128,12 +128,12 @@ class Bowling {
     bowlingScoreStrikeWithExtraStrikeAndStrike(a) {
         let arr = this.splitter(a);
         if((arr[10].charAt(0) == "X") && (arr[10].charAt(1) == "X")){
-            arr.pop()
-            arr.pop()
-        };
+            arr.pop();
+            arr.pop();
+        }
         let result = [];
         for (let i = 0; i <= (arr.length - 1); i++) {
-            if (arr[i].charAt(0) == 'X') {
+            if (arr[i].charAt(0) == "X") {
                 let strike = 10;
                 result.push(strike.toString());
                 result.push(arr[i + 1].charAt(0));

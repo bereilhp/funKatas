@@ -4,6 +4,6 @@ const extreme = {
         let smallest = Math.min(...array);
         return biggest - smallest; 
     }
-}
+};
 
 module.exports = extreme; 

@@ -1,4 +1,4 @@
-const Ascii = require("./ascii.js")
+const Ascii = require("./ascii.js");
 let char = new Ascii();
 
 test ("Test class ascii", () => {

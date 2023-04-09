@@ -6,11 +6,11 @@ function persistent(number) {
 
     if (arrNums.length == 1) {
         return 0;
-    };
+    }
 
     let multp = arrNums.reduce((a, b) => a * b);
     ans = ans + 1;
-    finalAns = ans
+    let finalAns = ans;
 
     if (multp > 9) {
         persistent(multp);

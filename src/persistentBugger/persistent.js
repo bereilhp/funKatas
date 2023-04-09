@@ -6,14 +6,14 @@ class Num {
 
         if(arrNums.length == 1){
             return 0;
-        };
+        }
 
         let multp = arrNums.reduce((a,b) => a*b);
         ans = ans + 1;
         
         if(multp > 9){
             return this.persistent(multp, ans); 
-        };        
+        }        
 
         return ans;
     }

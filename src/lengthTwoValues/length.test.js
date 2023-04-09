@@ -5,5 +5,5 @@ test ("Length two val", () => {
 });
 
 test ("Same test from description", () => {
-    expect(twoVal(5, true, false)).toEqual([true, false, true, false, true])
-})
+    expect(twoVal(5, true, false)).toEqual([true, false, true, false, true]);
+});

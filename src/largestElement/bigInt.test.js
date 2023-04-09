@@ -1,4 +1,4 @@
-const num = require("./bigInt")
+const num = require("./bigInt");
 test ("Example", () => {
     expect("test").toBe("test");
 });

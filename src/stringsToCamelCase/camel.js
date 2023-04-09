@@ -1,6 +1,6 @@
 class Camel {
     camelCase(string) {
-        let regex = /-|_|-_/gm
+        let regex = /-|_|-_/gm;
         let split = string.split(regex);
         let ans = [];
 

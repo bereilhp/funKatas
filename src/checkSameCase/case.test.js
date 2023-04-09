@@ -1,4 +1,4 @@
-const letter = require("./case")
+const letter = require("./case");
 test ("Example", () => {
     expect("test").toBe("test");
 });

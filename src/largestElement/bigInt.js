@@ -1,4 +1,4 @@
-num = {};
+let num = {};
 
 /**
  * 
@@ -10,7 +10,7 @@ num.biggestInt = function(n,array){
     let orderedArray = array.sort((a, b) => a - b).reverse();
     let newArray = orderedArray.slice(0,n).reverse(); 
     return newArray;
-}
+};
 
 module.exports = num;
 

@@ -4,7 +4,8 @@
   "description": "This repository contains Hands on Test Driven Development Katas using Node.js. ",
   "main": "",
   "scripts": {
-    "test": "jest --watch --coverage"
+    "test": "jest --watch --coverage",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/bereilhp/funKatas#readme",
   "devDependencies": {
     "@types/jest": "^29.2.4",
+    "eslint": "^8.38.0",
     "jest": "^29.3.1"
   }
 }

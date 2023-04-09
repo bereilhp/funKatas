@@ -4,6 +4,6 @@ class Arr {
         let arrayAnsNoRep = [...new Set(arrayAns)];
         return arrayAnsNoRep;
     }
-};
+}
 
 module.exports = Arr;

@@ -1,9 +1,9 @@
 function dni(a){ 
-    let x = dniCharsToArray(a)
+    let x = dniCharsToArray(a);
     if(x.length == 9){
         for(let i = 0; i < (x.length-1); i++){
-            if(typeof(x[i]) == 'number'){
-                    continue;
+            if(typeof(x[i]) == "number"){
+                continue;
             } else
                 return "The ID should only be numbers and the last a letter";
         }
@@ -30,7 +30,7 @@ function dniSuma(a){
 function dniLetra(a){
     let arr = ["T","R","W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]; 
     let x = dniSuma(a);
-    let ans = x % 23
+    let ans = x % 23;
     
     if(a[8] == arr[ans-1]){
         return "ID valid";
@@ -41,7 +41,7 @@ function dniLetra(a){
 }
 
 function nie(a){
-    let x = dniCharsToArray(a);
+    //let x = dniCharsToArray(a);
     //console.log(x);
     if(a[0] == 0){
         return "X";
@@ -60,7 +60,7 @@ function dniCharsToArray(a){
     let NoNaN = arr.map(value => isNaN(value) ? "letter" : value);
     NoNaN.push(a[a.length-1]);
 
-    return NoNaN
+    return NoNaN;
     
 }
 
@@ -74,7 +74,7 @@ function excepcionDNI(a){
         }else
             return "Correct Size";
     }catch(e){
-       return e;
+        return e;
     }
 }
 

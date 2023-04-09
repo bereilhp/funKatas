@@ -1,4 +1,4 @@
-const { tennisScore, tennisScoreGames} = require("./tennis")
+const { tennisScore, tennisScoreGames} = require("./tennis");
 
 test ("Score 15 - love", () => {
     expect(tennisScore("15-love")).toBe(1);

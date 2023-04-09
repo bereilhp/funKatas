@@ -1,4 +1,4 @@
-const oddNum = require("./oddNums")
+const oddNum = require("./oddNums");
 test ("Test #1", () => {
     expect(typeof(oddNum)).toBe("object");
 });

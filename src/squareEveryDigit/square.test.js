@@ -1,4 +1,4 @@
-const square = require("./square.js")
+const square = require("./square.js");
 test ("Prove if function exist", () => {
     expect(typeof(square)).toBe("function");
 });
@@ -19,7 +19,7 @@ test ("Square a number with two values", () => {
     expect(square(5584)).toBe(25256416);
 });
 test ("Square a number with ten values", () => {
-    expect(square(5555555555555)).toBe(25252525252525252525252525);
+    expect(square(5555555555555)).toBe(25252525252525252525252525n);
 });
 
 

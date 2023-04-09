@@ -17,12 +17,12 @@ const pigLatin = {
 
         aySplit.forEach(e => {
             if(e == "!ay" || e == "?ay"){
-                punctuationFix.push(e.slice(0,1))
-            }else punctuationFix.push(e)
+                punctuationFix.push(e.slice(0,1));
+            }else punctuationFix.push(e);
         });
 
         return punctuationFix.join(" ");
     }
-}
+};
 
 module.exports = { pigLatin };
