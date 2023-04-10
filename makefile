@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- ext.test.js
+	@npm test -- hashtag.test.js
 

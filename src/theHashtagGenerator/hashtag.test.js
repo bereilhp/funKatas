@@ -1,3 +1,5 @@
-test ("Example", () => {
-    expect("test").toBe("test");
+const { hashtag } = require("./hashtag");
+
+test ("Tyepof Hashtag", () => {
+    expect(typeof(hashtag)).toBe("object");
 });
