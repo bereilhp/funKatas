@@ -28,6 +28,10 @@ test ("Testing function still empty", () => {
     expect(hashtag.hashtagGenerator(" ")).toBe(false);
 });
 
+test ("Testing function still empty repeat", () => {
+    expect(hashtag.hashtagGenerator(" ".repeat(200))).toBe(false);
+});
+
 test ("Testing function more than 140 char ans", () => {
     expect(hashtag.hashtagGenerator("Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat")).toBe(false);
 });

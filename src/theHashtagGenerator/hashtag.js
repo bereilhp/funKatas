@@ -1,7 +1,7 @@
 const hashtag = {
     hashtagGenerator : function(text) {
 
-        if(text == "" || text == " "){
+        if(text == "" || text == " " || text == " ".repeat(200)){
             return false;
         }
 
