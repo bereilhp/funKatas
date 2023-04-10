@@ -1,10 +1,10 @@
 const hashtag = {
     hashtagGenerator : function(text) {
 
-        if(text == ""){
+        if(text == "" || text == " "){
             return false;
         }
-        
+
         let splitText = text.split(" ");
 
         for (let i = 1; i < splitText.length; i++) {

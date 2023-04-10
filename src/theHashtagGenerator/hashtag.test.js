@@ -20,9 +20,12 @@ test ("Testing function long sentence", () => {
     expect(hashtag.hashtagGenerator(" Hello there thanks for trying my Kata")).toBe("#HelloThereThanksForTryingMyKata");
 });
 
-
 test ("Testing function empty", () => {
     expect(hashtag.hashtagGenerator("")).toBe(false);
+});
+
+test ("Testing function still empty", () => {
+    expect(hashtag.hashtagGenerator(" ")).toBe(false);
 });
 
 
