@@ -7,8 +7,12 @@ const hashtag = {
 
         let splitText = text.split(" ");
 
-        for (let i = 1; i < splitText.length; i++) {
+        for (let i = 0; i < splitText.length; i++) {
             splitText[i] = splitText[i].charAt(0).toUpperCase() + splitText[i].slice(1);
+        }
+
+        if(splitText.join("").length >= 140){
+            return false;
         }
 
         return "#" + splitText.join("");
