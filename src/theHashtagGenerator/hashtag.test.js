@@ -16,8 +16,13 @@ test ("Testing function sentence", () => {
     expect(hashtag.hashtagGenerator("hello world")).toBe("#helloWorld");
 });
 
-test ("Testing function sentence", () => {
+test ("Testing function long sentence", () => {
     expect(hashtag.hashtagGenerator(" Hello there thanks for trying my Kata")).toBe("#HelloThereThanksForTryingMyKata");
+});
+
+
+test ("Testing function empty", () => {
+    expect(hashtag.hashtagGenerator("")).toBe(false);
 });
 
 
