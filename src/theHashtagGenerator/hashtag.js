@@ -1,6 +1,6 @@
 const hashtag = {
     hashtagGenerator : function(text) {
-        return text;
+        return "#" + text;
     }
 };
 

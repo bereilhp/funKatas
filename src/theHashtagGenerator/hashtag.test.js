@@ -7,3 +7,7 @@ test ("Tyepof Hashtag", () => {
 test ("Tyepof Hashtag function", () => {
     expect(typeof(hashtag.hashtagGenerator)).toBe("function");
 });
+
+test ("Testing function simple hello ", () => {
+    expect(hashtag.hashtagGenerator("hello")).toBe("#hello");
+});
