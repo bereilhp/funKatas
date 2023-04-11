@@ -23,3 +23,7 @@ test ("domainName function test cnet", () => {
 test ("domainName function test zombie-bites", () => {
     expect(domain.domainName("http://www.zombie-bites.com")).toBe("zombie-bites");
 });
+
+test ("domainName function test google", () => {
+    expect(domain.domainName("http://google.com")).toBe("google");
+});
