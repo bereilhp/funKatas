@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- hashtag.test.js
+	@npm test -- domainName.test.js
 
