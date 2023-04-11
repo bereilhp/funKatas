@@ -4,10 +4,9 @@ const domain = {
         let hostname = myURL.hostname;
         let splitHostname = hostname.split(".");
 
-        if(splitHostname.length == 2){
-            return splitHostname[0];
-        } else return splitHostname[1];
-        
+        if(splitHostname[0] == "www"){
+            return splitHostname[1];
+        } else return splitHostname[0];
     }
 };
 

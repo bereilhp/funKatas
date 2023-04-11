@@ -27,3 +27,7 @@ test ("domainName function test zombie-bites", () => {
 test ("domainName function test google", () => {
     expect(domain.domainName("http://google.com")).toBe("google");
 });
+
+test ("domainName function test google 2", () => {
+    expect(domain.domainName("http://google.co.jp")).toBe("google");
+});
