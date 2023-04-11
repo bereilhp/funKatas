@@ -31,3 +31,7 @@ test ("domainName function test google", () => {
 test ("domainName function test google 2", () => {
     expect(domain.domainName("http://google.co.jp")).toBe("google");
 });
+
+test ("domainName function test youtube", () => {
+    expect(domain.domainName("https://youtube.com")).toBe("youtube");
+});
