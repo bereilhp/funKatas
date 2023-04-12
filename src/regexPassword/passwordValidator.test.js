@@ -15,3 +15,7 @@ test ("Password.validator contains 6 letters", () => {
 test ("Password.validator contains lowercase letter", () => {
     expect(password.validator("hola123")).toBe(true);
 });
+
+test ("Password.validator contains uppercase letter", () => {
+    expect(password.validator("HOLA123")).toBe(true);
+});

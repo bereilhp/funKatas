@@ -1,6 +1,6 @@
 const password = {
     validator : function(pass){
-        let pattern = /^[a-z0-9]{6,}$/;
+        let pattern = /^[a-zA-Z0-9]{6,}$/;
         return pattern.test(pass);
     }
 };
