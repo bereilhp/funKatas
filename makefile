@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- domainName.test.js
+	@npm test -- passwordValidator.test.js
 
