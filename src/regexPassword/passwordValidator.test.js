@@ -11,3 +11,7 @@ test ("Test typeof password.validator", () => {
 test ("Password.validator contains 6 letters", () => {
     expect(password.validator("123456")).toBe(true);
 });
+
+test ("Password.validator contains lowercase letter", () => {
+    expect(password.validator("hola123")).toBe(true);
+});
