@@ -9,13 +9,18 @@ test ("Test typeof password.validator", () => {
 });
 
 test ("Password.validator contains 6 letters", () => {
-    expect(password.validator("123456")).toBe(true);
+    expect(password.validator("123456")).toBe(false);
 });
 
 test ("Password.validator contains lowercase letter", () => {
-    expect(password.validator("hola123")).toBe(true);
+    expect(password.validator("hola123")).toBe(false);
 });
 
 test ("Password.validator contains uppercase letter", () => {
-    expect(password.validator("HOLA123")).toBe(true);
+    expect(password.validator("HOLA123")).toBe(false);
 });
+
+test ("Password.validator special tests", () => {
+    expect(password.validator("ghdfj32")).toBe(false);
+});
+
