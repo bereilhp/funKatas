@@ -19,3 +19,7 @@ test ("num.lastDigit simple 4^1", () => {
 test ("num.lastDigit simple 4^2", () => {
     expect(num.lastDigit(4,2)).toBe(6);
 });
+
+test ("num.lastDigit simple 9^7", () => {
+    expect(num.lastDigit(9,7)).toBe(9);
+});
