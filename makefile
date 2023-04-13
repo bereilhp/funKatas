@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- passwordValidator.test.js
+	@npm test -- lastDigitNum.test.js
 
