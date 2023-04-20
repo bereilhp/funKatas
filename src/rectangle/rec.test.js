@@ -24,6 +24,10 @@ test ("Area rectangle", () => {
     expect(rectangle.area(0,0,3,4)).toBe(12);
 });
 
+test ("Area rectangle 2", () => {
+    expect(rectangle.area(0,0,4,4)).toBe(16);
+});
+
 test ("Perimeter rectangle", () => {
     expect(rectangle.perimeter(0,0,3,4)).toBe(14);
 });
