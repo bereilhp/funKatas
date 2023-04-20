@@ -1,3 +1,5 @@
-test ("Example", () => {
-    expect("test").toBe("test");
+const {rectangle} = require("./rec");
+
+test ("Typeof recta", () => {
+    expect(typeof(rectangle)).toBe("object");
 });

@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- lastDigitNum.test.js
+	@npm test -- rec.test.js
 
