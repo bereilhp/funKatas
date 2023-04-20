@@ -12,7 +12,21 @@ const rectangle = {
         let base = xmax - xmin;
         let height = ymax;
         return base * height;
-    }
+    },
+
+    perimeter : function(xmin,ymin,xmax,ymax){
+        let base = xmax - xmin;
+        let height = ymax;
+        return 2 * (base + height);
+    },
+
+    center : function(xmin,ymin,xmax,ymax){
+        let base = xmax - xmin;
+        let height = ymax;
+        let base2 = base/2;
+        let height2 = height/2;
+        return `x = ${base2} & y = ${height2}`;
+    },
 };
 
 module.exports = {rectangle};

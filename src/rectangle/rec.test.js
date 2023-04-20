@@ -23,3 +23,11 @@ test ("BuildRec a rectangle", () => {
 test ("Area rectangle", () => {
     expect(rectangle.area(0,0,3,4)).toBe(12);
 });
+
+test ("Perimeter rectangle", () => {
+    expect(rectangle.perimeter(0,0,3,4)).toBe(14);
+});
+
+test ("Center rectangle", () => {
+    expect(rectangle.center(0,0,3,4)).toBe("x = 1.5 & y = 2");
+});
