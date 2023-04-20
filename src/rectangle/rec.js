@@ -5,7 +5,13 @@ const rectangle = {
         }else if(ymin === ymax){
             return "Not a rectangle";
         }
-        return "a rectangle";
+        return "A rectangle";
+    },
+
+    area : function(xmin,ymin,xmax,ymax){
+        let base = xmax - xmin;
+        let height = ymax;
+        return base * height;
     }
 };
 
