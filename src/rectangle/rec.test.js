@@ -32,8 +32,12 @@ test ("Perimeter rectangle", () => {
     expect(rectangle.perimeter(0,0,3,4)).toBe(14);
 });
 
-test ("Perimeter rectangle", () => {
-    expect(rectangle.perimeter(0,0,4,4)).toBe(14);
+test ("Perimeter rectangle 2", () => {
+    expect(rectangle.perimeter(0,0,4,4)).toBe(16);
+});
+
+test ("Perimeter rectangle 3", () => {
+    expect(rectangle.perimeter(0,0,5,5)).toBe(20);
 });
 
 test ("Center rectangle", () => {
