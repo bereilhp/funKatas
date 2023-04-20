@@ -31,3 +31,7 @@ test ("Perimeter rectangle", () => {
 test ("Center rectangle", () => {
     expect(rectangle.center(0,0,3,4)).toBe("x = 1.5 & y = 2");
 });
+
+test ("Center rectangle 2", () => {
+    expect(rectangle.center(0,0,4,4)).toBe("x = 2 & y = 2");
+});
