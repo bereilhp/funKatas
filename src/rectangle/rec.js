@@ -1,12 +1,11 @@
 const rectangle = {
+
     buildRec : function(xmin,ymin,xmax,ymax){
-        
         if(xmin === xmax){
             return "Not a rectangle";
         }else if(ymin === ymax){
             return "Not a rectangle";
         }
-
         return "A rectangle";
     },
 
@@ -35,6 +34,7 @@ const rectangle = {
         let height = ymax;
         return Math.sqrt((base ** 2) + (height**2));
     }
+    
 };
 
 module.exports = {rectangle};
