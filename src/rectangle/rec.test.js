@@ -51,3 +51,7 @@ test ("Center rectangle 2", () => {
 test ("Center rectangle 3", () => {
     expect(rectangle.center(1,0,4,4)).toBe("x = 1.5 & y = 2");
 });
+
+test ("Diagonal rectangle ", () => {
+    expect(rectangle.diagonal(0,0,4,4)).toBeCloseTo(5.6568, 3);
+});

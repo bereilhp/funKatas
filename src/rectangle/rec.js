@@ -27,6 +27,12 @@ const rectangle = {
         let height2 = height/2;
         return `x = ${base2} & y = ${height2}`;
     },
+
+    diagonal : function(xmin,ymin,xmax,ymax){
+        let base = xmax - xmin;
+        let height = ymax;
+        return Math.sqrt((base ** 2) + (height**2));
+    }
 };
 
 module.exports = {rectangle};
