@@ -59,3 +59,7 @@ test ("Diagonal rectangle", () => {
 test ("Diagonal rectangle 2", () => {
     expect(rectangle.diagonal(0,0,8,8)).toBeCloseTo(11.3137, 3);
 });
+
+test ("Diagonal rectangle 3", () => {
+    expect(rectangle.diagonal(0,0,5,12)).toBeCloseTo(13, 3);
+});
