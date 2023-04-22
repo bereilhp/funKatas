@@ -16,5 +16,5 @@ test ("meanSqr.meanSqrError 2", () => {
 });
 
 test ("meanSqr.meanSqrError 3", () => {
-    expect(meanSqr.meanSqrError([-1, 0], [0, -1])).toBe(1);
+    expect(meanSqr.meanSqrError([-1,0], [0,-1])).toBe(1);
 });
