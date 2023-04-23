@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- meanSquare.test.js
+	@npm test -- supermarket.test.js
 
