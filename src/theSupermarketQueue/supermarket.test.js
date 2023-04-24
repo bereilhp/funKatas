@@ -23,3 +23,8 @@ test ("function queueTime test #3", () => {
 test ("function queueTime test #4", () => {
     expect(queue.queueTime([], 1)).toBe(0);
 });
+
+test ("function queueTime test #5", () => {
+    expect(queue.queueTime([1,2,3,4], 1)).toBe(10);
+});
+
