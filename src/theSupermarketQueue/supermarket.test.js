@@ -16,3 +16,6 @@ test ("function queueTime test #2", () => {
     expect(queue.queueTime([10,2,3,3], 2)).toBe(10);
 });
 
+test ("function queueTime test #3", () => {
+    expect(queue.queueTime([2,3,10], 2)).toBe(12);
+});
