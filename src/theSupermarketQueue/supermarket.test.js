@@ -32,4 +32,8 @@ test ("function queueTime test #6", () => {
     expect(queue.queueTime([2,2,3,3,4,4], 2)).toBe(9);
 });
 
+test ("function queueTime test #7", () => {
+    expect(queue.queueTime([1,2,3,4,5], 100)).toBe(5);
+});
+
 

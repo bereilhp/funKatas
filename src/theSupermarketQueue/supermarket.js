@@ -1,6 +1,6 @@
 const queue = {
     queueTime : function(customers, n){
-        
+
         if(n === 1 ){
             return customers.reduce((a,b) => a+b,0);
         }else if(n === 2){
@@ -20,6 +20,8 @@ const queue = {
                 let ans = Math.max(till1, till2);
                 return ans;
             }
+        }else if(n > customers.length){
+            return Math.max(...customers);
         }
     }
 };
