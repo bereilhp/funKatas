@@ -1,6 +1,8 @@
 const queue = {
     queueTime : function(customers, n){
-        return customers + " " + n;
+        if(n === 1 ){
+            return customers.reduce((a,b) => a+b,0);
+        }
     }
 };
 
