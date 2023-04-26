@@ -1,7 +1,6 @@
 /**
  * Class num
  */
-
 class num {
     /**
      * 
