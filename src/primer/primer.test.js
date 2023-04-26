@@ -10,3 +10,10 @@ describe("Object and Function exists", () => {
         expect(typeof(numObj.primeNumber)).toBe("function");
     });
 });
+
+describe("Testing function primeNumber",() =>{
+    let numObj = new num();
+    test ("Function simple test", () => {
+        expect(numObj.primeNumber(10)).toBe(10);
+    });
+});
