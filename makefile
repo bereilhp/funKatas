@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- supermarket.test.js
+	@npm test -- primer.test.js
 
