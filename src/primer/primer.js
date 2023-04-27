@@ -4,8 +4,8 @@
 class num {
     /**
      * 
-     * @param {Number} number Any  positive number bigger than zero
-     * @returns true or false if prime
+     * @param {Int} number Any  positive number bigger than zero
+     * @returns true or false if number is prime
      */
     primeNumber(number){
         try {
