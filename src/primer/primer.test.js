@@ -35,5 +35,8 @@ describe("Testing function primeNumber input",() =>{
 describe("Testing function primeNumber working properly", () => {
     let numObj = new num();
 
+    it("PrimeNumber Function test 2", () => {
+        expect(numObj.primeNumber(2)).toBe(true);
+    });
 
 });
