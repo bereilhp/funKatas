@@ -11,7 +11,7 @@ class num {
         try {
             if(typeof(number) != "number"){
                 throw new Error ("Not a Number");
-            }else if(number <= 0){
+            }else if(number <= 1){
                 throw "Not valid Number";
             }
         } catch (error) {

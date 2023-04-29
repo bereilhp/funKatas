@@ -22,12 +22,18 @@ describe("Testing function primeNumber input",() =>{
     it("Function throw Error when not a number", () => {
         expect(numObj.primeNumber("s")).toBe("Error: Not a Number");
     });
+
+    it("PrimeNumber Function test 0", () => {
+        expect(numObj.primeNumber(0)).toBe("Not valid Number");
+    });
+
+    it("PrimeNumber Function test 1", () => {
+        expect(numObj.primeNumber(1)).toBe("Not valid Number");
+    });
 });
 
 describe("Testing function primeNumber working properly", () => {
     let numObj = new num();
 
-    it("PrimeNumber Function test 0", () => {
-        expect(numObj.primeNumber(0)).toBe("Not valid Number");
-    });
+
 });
