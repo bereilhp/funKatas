@@ -102,4 +102,8 @@ describe("Testing function primeNumber working properly", () => {
     it("PrimeNumber Function test 103", () => {
         expect(numObj.primeNumber(103)).toBe(true);
     });
+
+    it("PrimeNumber Function test 107", () => {
+        expect(numObj.primeNumber(107)).toBe(true);
+    });
 });
