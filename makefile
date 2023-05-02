@@ -8,5 +8,5 @@ open:
 	@codium .
 
 test: 
-	@npm test -- primer.test.js
+	@npm test -- palin.test.js
 
