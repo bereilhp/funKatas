@@ -7,4 +7,8 @@ describe ("Object and Function exists", () => {
         expect(typeof(p)).toBe("object");
     });
 
+    it("Function isPalindrome exists", ()=> {
+        expect(typeof(p.isPalindrome)).toBe("function");
+    });
+
 });
