@@ -12,3 +12,13 @@ describe ("Object and Function exists", () => {
     });
 
 });
+
+describe ("Function isPalindrome test", () => {
+    const p = new palindrome();
+
+    it("Input is not a word", ()=> {
+        expect(p.isPalindrome(10)).toBe("No es una palabra");
+    });
+
+
+});

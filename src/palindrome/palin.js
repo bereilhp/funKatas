@@ -1,6 +1,15 @@
 class palindrome {
     isPalindrome(word){
-        return word;
+        try {
+            if(word != "string"){
+                throw "No es una palabra";
+            }
+            
+            return word;
+            
+        } catch (error) {
+            return error;
+        }
     }
 }
 
