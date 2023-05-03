@@ -7,6 +7,7 @@ class palindrome {
 
             return word;
         } catch (error) {
+            
             return error;
         }
     }
