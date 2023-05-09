@@ -1,6 +1,5 @@
 class palindrome {
     isPalindrome(word){
-        
         try {
             if(typeof(word) != "string"){
                 throw "No es una palabra";
