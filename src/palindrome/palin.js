@@ -4,9 +4,7 @@ class palindrome {
             if(typeof(word) != "string"){
                 throw "No es una palabra";
             }
-
             return word;
-            
         } catch (error) {
             return error;
         }
