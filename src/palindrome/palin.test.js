@@ -24,5 +24,9 @@ describe ("Function isPalindrome test", () => {
         expect(p.isPalindrome("hola")).toBe(false);
     });
 
+    it("Input is palindrome 2", ()=> {
+        expect(p.isPalindrome("reconocer")).toBe(true);
+    });
+
 
 });
