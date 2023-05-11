@@ -20,8 +20,8 @@ describe ("Function isPalindrome test", () => {
         expect(p.isPalindrome(10)).toBe("No es una palabra");
     });
 
-    it("Input is text", ()=> {
-        expect(p.isPalindrome("hola")).toBe("hola");
+    it("Input is palindrome", ()=> {
+        expect(p.isPalindrome("hola")).toBe(false);
     });
 
 
