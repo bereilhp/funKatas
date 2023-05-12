@@ -20,12 +20,16 @@ describe ("Function isPalindrome test", () => {
         expect(p.isPalindrome(10)).toBe("No es una palabra");
     });
 
-    it("Input is palindrome", ()=> {
+    it("Input is palindrome false", ()=> {
         expect(p.isPalindrome("hola")).toBe(false);
     });
 
-    it("Input is palindrome 2", ()=> {
+    it("Input is palindrome true", ()=> {
         expect(p.isPalindrome("reconocer")).toBe(true);
+    });
+
+    it("Input is palindrome true 2", ()=> {
+        expect(p.isPalindrome("mom")).toBe(true);
     });
 
 
