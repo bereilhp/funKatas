@@ -2,6 +2,7 @@
   "name": "funkatas",
   "version": "1.0.0",
   "description": "This repository contains Hands on Test Driven Development Katas using Node.js. ",
+  "type": "commonjs",
   "main": "",
   "scripts": {
     "test": "jest --watch --coverage",
