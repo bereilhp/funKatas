@@ -32,5 +32,9 @@ describe ("Function isPalindrome test", () => {
         expect(p.isPalindrome("mom")).toBe(true);
     });
 
+    it("Input is palindrome true 3", ()=> {
+        expect(p.isPalindrome("dad")).toBe(true);
+    });
+
 
 });
