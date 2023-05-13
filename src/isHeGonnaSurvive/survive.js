@@ -1,10 +1,7 @@
 class Survive {
     isHeGonnaSurvive(bullets, dragons){
-        if(bullets / dragons >= 2){
-            return true;
-        } else return false;
+        return bullets / dragons >= 2;
     }
-
 }
 
 module.exports = {

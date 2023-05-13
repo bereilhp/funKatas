@@ -9,4 +9,3 @@ open:
 
 test: 
 	@npm test -- survive.test.js
-
