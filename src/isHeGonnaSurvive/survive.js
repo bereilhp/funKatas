@@ -2,7 +2,7 @@ class Survive {
     isHeGonnaSurvive(bullets, dragons){
         if(bullets / dragons == 2){
             return true;
-        } else false;
+        } else return false;
     }
 
 }

@@ -23,8 +23,13 @@ describe("isHeGonnaSurvive funciton tests", () => {
         expect(survive.isHeGonnaSurvive(4,2)).toBe(true);
     });
 
-    it("Simple test", () => {
+    it("Simple test 2", () => {
         const survive = new Survive;
         expect(survive.isHeGonnaSurvive(10,5)).toBe(true);
+    });
+
+    it("Simple test 3", () => {
+        const survive = new Survive;
+        expect(survive.isHeGonnaSurvive(7,4)).toBe(false);
     });
 });
