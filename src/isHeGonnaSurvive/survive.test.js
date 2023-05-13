@@ -32,4 +32,9 @@ describe("isHeGonnaSurvive funciton tests", () => {
         const survive = new Survive;
         expect(survive.isHeGonnaSurvive(7,4)).toBe(false);
     });
+
+    it("Simple test 4", () => {
+        const survive = new Survive;
+        expect(survive.isHeGonnaSurvive(4,5)).toBe(false);
+    });
 });
