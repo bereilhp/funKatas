@@ -1,6 +1,8 @@
 class Survive {
-    isHeGonnaSurvive(a){
-        return a;
+    isHeGonnaSurvive(bullets, dragons){
+        if(bullets / dragons == 2){
+            return true;
+        } else false;
     }
 
 }

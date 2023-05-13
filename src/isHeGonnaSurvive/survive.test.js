@@ -15,5 +15,11 @@ describe("Class and object exist", () => {
         expect(typeof(survive.isHeGonnaSurvive)).toBe("function");
     });
 
+});
 
+describe("isHeGonnaSurvive funciton tests", () => {
+    it("Simple test", () => {
+        const survive = new Survive;
+        expect(survive.isHeGonnaSurvive(4,2)).toBe(true);
+    });
 });
