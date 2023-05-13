@@ -10,4 +10,10 @@ describe("Class and object exist", () => {
         expect(typeof(survive)).toBe("object");
     });
 
+    it("Function typeof", () => {
+        const survive = new Survive;
+        expect(typeof(survive.isHeGonnaSurvive)).toBe("function");
+    });
+
+
 });
