@@ -1,6 +1,8 @@
 class Survive {
     isHeGonnaSurvive(bullets, dragons){
-        return bullets / dragons >= 2;
+        if(bullets == 1 && dragons == 0){
+            return undefined;
+        } else return bullets / dragons >= 2;
     }
 }
 
