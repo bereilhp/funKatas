@@ -57,4 +57,9 @@ describe("isHeGonnaSurvive funciton tests", () => {
         const survive = new Survive;
         expect(survive.isHeGonnaSurvive(1,0)).toBe(undefined);
     });
+
+    it("Hard test 8", () => {
+        const survive = new Survive;
+        expect(survive.isHeGonnaSurvive(20,0)).toBe(true);
+    });
 });
