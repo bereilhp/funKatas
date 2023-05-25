@@ -15,4 +15,9 @@ describe("Simple test function", () => {
         const sequence = new Sequence;
         expect(sequence.sum(2,2,2)).toBe(2);
     });
+
+    it("Simple test of function sum begin < end", () => {
+        const sequence = new Sequence;
+        expect(sequence.sum(2,4,2)).toBe(6);
+    });
 });
