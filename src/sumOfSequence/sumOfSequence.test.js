@@ -30,4 +30,9 @@ describe("Simple test function", () => {
         const sequence = new Sequence;
         expect(sequence.sum(1,5,1)).toBe(15);
     });
+
+    it("Hard Test", () => {
+        const sequence = new Sequence;
+        expect(sequence.sum(1,5,3)).toBe(5);
+    });
 });
