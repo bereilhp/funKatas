@@ -1,6 +1,8 @@
 class Sequence {
     sum(begin,end,step){
-        return true;
+        if(begin > end){
+            return 0;
+        }
     }
 }
 
