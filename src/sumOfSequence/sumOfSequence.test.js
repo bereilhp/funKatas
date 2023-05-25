@@ -20,4 +20,9 @@ describe("Simple test function", () => {
         const sequence = new Sequence;
         expect(sequence.sum(2,4,2)).toBe(6);
     });
+
+    it("Medium Test", () => {
+        const sequence = new Sequence;
+        expect(sequence.sum(2,6,2)).toBe(12);
+    });
 });
