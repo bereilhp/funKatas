@@ -8,4 +8,4 @@ open:
 	@codium .
 
 test: 
-	@npm test -- survive.test.js
+	@npm test -- sumOfSequence.test.js
