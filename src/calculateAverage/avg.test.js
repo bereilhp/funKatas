@@ -31,3 +31,10 @@ it ("findAvg different number array", () => {
     const average = new Average;
     expect(average.findAvg([1,2,3])).toBe(2);
 });
+
+
+it ("findAvg different number array 2", () => {
+    const average = new Average;
+    expect(average.findAvg([1,2,3,4])).toBe(2.5);
+});
+
