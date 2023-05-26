@@ -8,4 +8,4 @@ open:
 	@codium .
 
 test: 
-	@npm test -- sumOfSequence.test.js
+	@npm test -- avg.test.js
