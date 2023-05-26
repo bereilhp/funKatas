@@ -1,6 +1,8 @@
 class Average {
   findAvg(array){
-    return array;
+    if (!array.length){
+      return 0
+    };
   }
 }
 

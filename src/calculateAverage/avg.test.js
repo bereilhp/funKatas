@@ -14,3 +14,8 @@ it ("average obj has function", () => {
     expect(typeof(average.findAvg)).toBe("function");
 });
 
+
+it ("findAvg simple empty array return 0", () => {
+    const average = new Average;
+    expect(average.findAvg([])).toBe(0);
+});
