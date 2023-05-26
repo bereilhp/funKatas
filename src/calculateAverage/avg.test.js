@@ -19,3 +19,9 @@ it ("findAvg simple empty array return 0", () => {
     const average = new Average;
     expect(average.findAvg([])).toBe(0);
 });
+
+
+it ("findAvg all same number array", () => {
+    const average = new Average;
+    expect(average.findAvg([1,1,1])).toBe(1);
+});
