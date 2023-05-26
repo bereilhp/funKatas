@@ -25,3 +25,9 @@ it ("findAvg all same number array", () => {
     const average = new Average;
     expect(average.findAvg([1,1,1])).toBe(1);
 });
+
+
+it ("findAvg different number array", () => {
+    const average = new Average;
+    expect(average.findAvg([1,2,3])).toBe(2);
+});
