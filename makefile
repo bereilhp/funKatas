@@ -8,4 +8,4 @@ open:
 	@codium .
 
 test: 
-	@npm test -- avg.test.js
+	@npm test -- invertValues.test.js
