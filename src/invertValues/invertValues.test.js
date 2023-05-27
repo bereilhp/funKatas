@@ -15,3 +15,10 @@ describe("Test class, obj and function exists", () => {
         expect(typeof(invertValues.invert)).toBe("function");
     });
 });
+
+describe("Test class, obj and function exists", () => {
+    it("Empty array test", () => {
+        const invertValues = new InvertValues();
+        expect(invertValues.invert([])).toEqual([]);
+    });
+});

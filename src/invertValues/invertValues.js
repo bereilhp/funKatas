@@ -1,6 +1,8 @@
 class InvertValues {
-    invert(input){
-        return input;
+    invert(input) {
+        if (!input.length) {
+            return input;
+        }
     }
 }
 
