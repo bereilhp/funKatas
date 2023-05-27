@@ -21,4 +21,9 @@ describe("Test class, obj and function exists", () => {
         const invertValues = new InvertValues();
         expect(invertValues.invert([])).toEqual([]);
     });
+
+    it("Simple array 1 to 5", () => {
+        const invertValues = new InvertValues();
+        expect(invertValues.invert([1,2,3,4,5])).toEqual([-1,-2,-3, -4, -5]);
+    });
 });
