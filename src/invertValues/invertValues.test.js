@@ -22,6 +22,11 @@ describe("Test class, obj and function exists", () => {
         expect(invertValues.invert([])).toEqual([]);
     });
 
+    it("Zero array test", () => {
+        const invertValues = new InvertValues();
+        expect(invertValues.invert([0])).toEqual([0]);
+    });
+
     it("Simple array 1 to 5", () => {
         const invertValues = new InvertValues();
         expect(invertValues.invert([1,2,3,4,5])).toEqual([-1,-2,-3, -4, -5]);
