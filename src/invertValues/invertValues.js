@@ -3,7 +3,7 @@ class InvertValues {
         if (!input.length) {
             return input;
         } else {
-            return input.map((a) => a - (a*2));
+            return input.map((num) => num - (num*2));
         }
     }
 }
