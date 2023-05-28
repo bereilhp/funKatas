@@ -4,5 +4,10 @@ describe("Exists Tests", () => {
     it("Class exists test", () => {
         expect(typeof(Product)).toBe("function");
     });
+
+    it("Obj exists test", () => {
+        const product = new Product;
+        expect(typeof(product)).toBe("object");
+    });
 });
 
