@@ -31,4 +31,9 @@ describe("maxProduct() tests", () => {
         const product = new Product;
         expect(product.maxProduct([7, 8, 9])).toBe(72);
     });
+
+    it("Function maxProduct() test 4", () => {
+        const product = new Product;
+        expect(product.maxProduct([33, 231, 454, 11, 9, 99, 57])).toBe(104874);
+    });
 });
