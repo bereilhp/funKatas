@@ -16,3 +16,9 @@ describe("Exists Tests", () => {
     });
 });
 
+describe("maxProduct() tests", () => {
+    it("Function maxProduct() test", () => {
+        const product = new Product;
+        expect(product.maxProduct([1,2,3])).toBe(6);
+    });
+});
