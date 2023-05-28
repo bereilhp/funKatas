@@ -1,3 +1,8 @@
-test ("Example", () => {
-    expect("test").toBe("test");
+const {Product} = require("./product");
+
+describe("Exists Tests", () => {
+    it("Class exists test", () => {
+        expect(typeof(Product)).toBe("function");
+    });
 });
+
