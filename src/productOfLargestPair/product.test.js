@@ -9,5 +9,10 @@ describe("Exists Tests", () => {
         const product = new Product;
         expect(typeof(product)).toBe("object");
     });
+
+    it("Obj function exists test", () => {
+        const product = new Product;
+        expect(typeof(product.maxProduct)).toBe("function");
+    });
 });
 
