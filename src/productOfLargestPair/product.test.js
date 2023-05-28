@@ -1,4 +1,5 @@
 const {Product} = require("./product");
+const {Productv} = require("./productv2");
 
 describe("Exists Tests", () => {
     it("Class exists test", () => {
@@ -36,4 +37,10 @@ describe("maxProduct() tests", () => {
         const product = new Product;
         expect(product.maxProduct([33, 231, 454, 11, 9, 99, 57])).toBe(104874);
     });
+
+    it("Function maxProduct() test new approach", () => {
+        const productv = new Productv;
+        expect(productv.maxProduct([33, 231, 454, 11, 9, 99, 57])).toBe(104874);
+    });
+
 });
