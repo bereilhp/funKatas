@@ -8,4 +8,4 @@ open:
 	@codium .
 
 test: 
-	@npm test -- product.test.js
+	@npm test -- index.test.js
