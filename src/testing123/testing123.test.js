@@ -1,4 +1,3 @@
-const { Linter } = require("eslint");
 const {LineNumber} = require("./testing123");
 
 describe("Check if they exist", () => {
