@@ -1,9 +1,7 @@
-test ("Example", () => {
-    expect("test").toBe("test");
-});
+const {LineNumber} = require("./testing123");
 
-describe("Example Describe Block", () => {
-    it("Example test", () => {
-        expect("test").toBe("test");
+describe("Check if they exist", () => {
+    it("Class exists", () => {
+        expect(typeof(LineNumber)).toBe("function");
     });
 });
