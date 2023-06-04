@@ -9,4 +9,9 @@ describe("Check if they exist", () => {
         const lineNumber = new LineNumber();
         expect(typeof(lineNumber)).toBe("object");
     });
+
+    it("Function exists", () => {
+        const lineNumber = new LineNumber();
+        expect(typeof(lineNumber.count)).toBe("function");
+    });
 });
