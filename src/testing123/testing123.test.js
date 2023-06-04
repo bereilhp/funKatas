@@ -1,3 +1,4 @@
+const { Linter } = require("eslint");
 const {LineNumber} = require("./testing123");
 
 describe("Check if they exist", () => {
@@ -13,5 +14,12 @@ describe("Check if they exist", () => {
     it("Function exists", () => {
         const lineNumber = new LineNumber();
         expect(typeof(lineNumber.count)).toBe("function");
+    });
+});
+
+describe("test function count", () => {
+    it("Simple empty test", () => {
+        const lineNumber = new LineNumber();
+        expect(lineNumber.count([])).toEqual([]);
     });
 });

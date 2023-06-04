@@ -1,5 +1,9 @@
 class LineNumber {
-    count(){}
+    count(array){
+        if(array.length == 0){
+            return array;
+        }
+    }
 
 }
 
