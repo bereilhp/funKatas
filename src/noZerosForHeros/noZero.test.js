@@ -9,4 +9,9 @@ describe("Test if they exist", () => {
         let zero = new Zero();
         expect(typeof(zero)).toBe("object");
     });
+
+    it("Function Exists", () => {
+        let zero = new Zero();
+        expect(typeof(zero.removeZeros)).toBe("function");
+    });
 });
