@@ -21,4 +21,9 @@ describe("Function tests", () => {
         let zero = new Zero();
         expect(zero.removeZeros(100)).toBe(1);
     });
+
+    it("Function Test #2", () => {
+        let zero = new Zero();
+        expect(zero.removeZeros(0)).toBe(0);
+    });
 });
