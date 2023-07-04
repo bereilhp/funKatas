@@ -1,9 +1,7 @@
-test ("Example", () => {
-    expect("test").toBe("test");
-});
+const {Zero} = require("./noZero");
 
-describe("Example Describe Block", () => {
-    it("Example test", () => {
-        expect("test").toBe("test");
+describe("Test if they exist", () => {
+    it("Class Exists", () => {
+        expect(typeof(Zero)).toBe("function");
     });
 });
