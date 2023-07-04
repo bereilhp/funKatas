@@ -1,4 +1,7 @@
 class Zero {
+    removeZeros(){
+        return ;
+    }
 
 }
 

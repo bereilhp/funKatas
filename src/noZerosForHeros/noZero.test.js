@@ -4,4 +4,9 @@ describe("Test if they exist", () => {
     it("Class Exists", () => {
         expect(typeof(Zero)).toBe("function");
     });
+
+    it("Object Exists", () => {
+        let zero = new Zero();
+        expect(typeof(zero)).toBe("object");
+    });
 });
