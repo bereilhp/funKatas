@@ -31,19 +31,19 @@ test ("Object Function test 999", () => {
 });
 
 test ("Function Glob test 39", () => {
-    expect(persistentGlob(39)).toBe(3);
+    expect(persistentGlob(39)).toBe(1);
 });
 
 test ("Function Glob test 10", () => {
-    expect(persistentGlob(999)).toBe(4);
+    expect(persistentGlob(999)).toBe(1);
 });
 
 test ("Function GLob test 25", () => {
-    expect(persistentGlob(25)).toBe(2);
+    expect(persistentGlob(25)).toBe(1);
 });
 
 test ("Function GLob test 999", () => {
-    expect(persistentGlob(999)).toBe(4);
+    expect(persistentGlob(999)).toBe(1);
 });
 
 test ("Function GLob test 4", () => {

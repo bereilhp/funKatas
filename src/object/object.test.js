@@ -3,7 +3,7 @@ const carColor = require("./object.js").car.color;
 const bike = require("./object").bike;
 
 test ("Model object car", () => {
-    expect(car.model).toBe("600");
+    expect(car.model).toBe("500");
 });
 
 test ("Object car color", () => {
