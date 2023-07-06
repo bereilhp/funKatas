@@ -15,3 +15,10 @@ describe("Test if they exist", () => {
         expect(typeof(reverse.reverseList)).toBe("function");
     });
 });
+
+describe("Function tests", () => {
+    it("Simple reverse test", () => {
+        const reverse = new Reverse();
+        expect(reverse.reverseList([1,2,3])).toEqual([3,2,1]);
+    });
+});
