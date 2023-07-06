@@ -9,4 +9,9 @@ describe("Test if they exist", () => {
         const reverse = new Reverse();
         expect(typeof(reverse)).toBe("object");
     });
+
+    it("Function exists", () => {
+        const reverse = new Reverse();
+        expect(typeof(reverse.reverseList)).toBe("function");
+    });
 });
