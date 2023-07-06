@@ -6,7 +6,6 @@ class Reverse {
         }
         return ans; //we can also use list.reverse()
     }
-
 }
 
 module.exports = {
