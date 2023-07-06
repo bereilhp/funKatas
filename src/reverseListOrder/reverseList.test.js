@@ -1,9 +1,7 @@
-test ("Example", () => {
-    expect("test").toBe("test");
-});
+const {Reverse} = require("./reverseList");
 
-describe("Example Describe Block", () => {
-    it("Example test", () => {
-        expect("test").toBe("test");
+describe("Test if they exist", () => {
+    it("Class exists", () => {
+        expect(typeof(Reverse)).toBe("function");
     });
 });
