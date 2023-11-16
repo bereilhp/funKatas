@@ -8,4 +8,4 @@ open:
 	@codium .
 
 test: 
-	@npm test -- reverseList.test.js
+	@npm test -- primeNumbers.test.js
