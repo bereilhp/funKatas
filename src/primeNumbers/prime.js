@@ -19,12 +19,23 @@ const isPrime = (number) => {
  */
 const getPrimes = (start, finish) => {
   let ans = new Array();
-  for (let i = start; i <= finish; i++) {
-    if (isPrime(i)) {
-      ans.push(i);
+  if (start > finish) {
+    let str = finish;
+    let fin = start;
+    for (let i = str; i <= fin; i++) {
+      if (isPrime(i)) {
+        ans.push(i);
+      }
     }
+    return ans;
+  } else {
+    for (let i = start; i <= finish; i++) {
+      if (isPrime(i)) {
+        ans.push(i);
+      }
+    }
+    return ans;
   }
-  return ans;
 };
 
 module.exports = { isPrime, getPrimes };
