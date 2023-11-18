@@ -19,7 +19,11 @@ describe("getPrimes", () => {
     expect(typeof getPrimes).toBe("function");
   });
 
-  it("typeof", () => {
+  it("simple test", () => {
     expect(getPrimes(0, 2)).toEqual([2]);
+  });
+
+  it("zero test", () => {
+    expect(getPrimes(0, 0)).toEqual([]);
   });
 });
