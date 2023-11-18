@@ -26,4 +26,8 @@ describe("getPrimes", () => {
   it("zero test", () => {
     expect(getPrimes(0, 0)).toEqual([]);
   });
+
+  it("zero to 30", () => {
+    expect(getPrimes(0, 30)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
+  });
 });
