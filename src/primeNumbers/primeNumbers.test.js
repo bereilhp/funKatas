@@ -1,4 +1,4 @@
-const { isPrime } = require("./prime");
+const { isPrime, getPrimes } = require("./prime");
 
 describe("isPrime", () => {
   it("typeof", () => {
@@ -11,5 +11,15 @@ describe("isPrime", () => {
 
   it("Simple test true", () => {
     expect(isPrime(7)).toBe(true);
+  });
+});
+
+describe("getPrimes", () => {
+  it("typeof", () => {
+    expect(typeof getPrimes).toBe("function");
+  });
+
+  it("typeof", () => {
+    expect(getPrimes(0, 2)).toEqual([2]);
   });
 });

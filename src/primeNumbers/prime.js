@@ -18,7 +18,13 @@ const isPrime = (number) => {
  * @returns Sequence of all prime number from start to finish
  */
 const getPrimes = (start, finish) => {
-  return start, finish;
+  let ans = new Array();
+  for (let i = start; i <= finish; i++) {
+    if (isPrime(i)) {
+      ans.push(i);
+    }
+  }
+  return ans;
 };
 
 module.exports = { isPrime, getPrimes };
