@@ -1,9 +1,7 @@
-test("Example", () => {
-  expect("test").toBe("test");
-});
+const { permutation } = require("./shuffle");
 
-describe("Example Describe Block", () => {
-  it("Example test", () => {
-    expect("test").toBe("test");
+describe("Tests", () => {
+  it("typeof permutation", () => {
+    expect(typeof permutation).toBe("function");
   });
 });
