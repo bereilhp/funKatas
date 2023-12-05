@@ -1,3 +1,8 @@
+/**
+ *
+ * @param {*} array
+ * @returns
+ */
 const permutation = (array) => {
   const numElementsArray = array.length;
 
