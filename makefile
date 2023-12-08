@@ -8,4 +8,4 @@ open:
 	@codium .
 
 test: 
-	@npm test -- shuffle.test.js
+	@npm test -- duck.test.js
