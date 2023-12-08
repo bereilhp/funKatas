@@ -22,4 +22,16 @@ describe("Test block", () => {
   it("Test #1", () => {
     expect(duckDuckGoose(players, 1)).toBe("a");
   });
+
+  it("Test #2", () => {
+    expect(duckDuckGoose(players, 10)).toBe("z");
+  });
+
+  it("Test #3", () => {
+    expect(duckDuckGoose(players, 20)).toBe("z");
+  });
+
+  it("Test #4", () => {
+    expect(duckDuckGoose(players, 18)).toBe("g");
+  });
 });

@@ -5,8 +5,14 @@ class Player {
 }
 
 function duckDuckGoose(players, goose) {
-  const letter = players[goose - 1];
-  return letter.name;
+  if (goose > players.length) {
+    let newGoose = goose - players.length;
+    const letter = players[newGoose - 1];
+    return letter.name;
+  } else {
+    const letter = players[goose - 1];
+    return letter.name;
+  }
 }
 
 module.exports = { Player, duckDuckGoose };
