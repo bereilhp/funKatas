@@ -1,5 +1,5 @@
 const config = {
-    verbose: true,
+  verbose: true,
 };
-  
+
 module.exports = config;
