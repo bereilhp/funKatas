@@ -1,9 +1,19 @@
-test("Example", () => {
-  expect("test").toBe("test");
-});
+const { isItALetter } = require("./isItALetter");
 
-describe("Example Describe Block", () => {
-  it("Example test", () => {
-    expect("test").toBe("test");
+describe("Test function exists", () => {
+  it("isItALetter() test", () => {
+    expect(typeof isItALetter).toBe("function");
+  });
+
+  it("Base Case test", () => {
+    expect(isItALetter("A")).toBe(true);
+  });
+
+  it("Failing Case test", () => {
+    expect(isItALetter(3)).toBe(false);
+  });
+
+  it("Inserting a word test", () => {
+    expect(isItALetter("Hey")).toBe(true);
   });
 });
