@@ -16,4 +16,8 @@ describe("Test function exists", () => {
   it("Inserting a word test", () => {
     expect(isItALetter("Hey")).toBe(true);
   });
+
+  it("Inserting a word but first letter is a number test", () => {
+    expect(isItALetter("3Hey")).toBe(false);
+  });
 });
