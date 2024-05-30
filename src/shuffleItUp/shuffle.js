@@ -1,7 +1,7 @@
 /**
  *
  * @param {*} array
- * @returns
+ * @returns ans
  */
 const permutation = (array) => {
   const numElementsArray = array.length;

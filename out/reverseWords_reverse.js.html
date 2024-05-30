@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: reverseWords/reverse.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,45 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: reverseWords/reverse.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>class Word {
+    constructor(listOfChars){
+        this.listOfChars = listOfChars;
+    }
+    /**
+     * 
+     * @param {String} text Stdin that is a string containg a sentence or word
+     * @returns The input but reversed
+     */
+    reverseWord(text){
+        let chatArr = text.split("");
+        let reverseArr = chatArr.reverse();
+        let joinArr = reverseArr.join("");
+        let reverseAgain = joinArr.split(" ").reverse().join(" ");
+        return reverseAgain;
+    }
+}
+
+let wordy = new Word("hello");
+console.log(wordy.listOfChars);
+let wordy2 = new Word;
+wordy2.listOfChars = "Hello";
+wordy2.newAttribute = "Test";
+console.log(wordy2);
 
 
-    <h3> </h3>
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+module.exports = Word;</code></pre>
+        </article>
+    </section>
 
 
 

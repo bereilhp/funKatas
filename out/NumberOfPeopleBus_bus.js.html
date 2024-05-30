@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: NumberOfPeopleBus/bus.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,38 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: NumberOfPeopleBus/bus.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const bus = {};
 
+/**
+ * 
+ * @param {Array} busList 
+ * @param {Integer} peopleleft 
+ * @returns Number of people left on the bus
+ */
+bus.numberOfPeople = function(busList/*, peopleleft*/){
+    let peopleOn = 0;
+    let peopleOff = 0;
 
-    <h3> </h3>
+    for(let i = 0; i &lt; busList.length; i++){
+        peopleOn = busList[i][0] + peopleOn;
+        peopleOff = busList[i][1] + peopleOff;     
+    } 
 
+    return peopleOn - peopleOff; 
+};
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+module.exports =  bus;</code></pre>
+        </article>
+    </section>
 
 
 

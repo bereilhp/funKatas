@@ -9,3 +9,9 @@ open:
 
 test: 
 	@npm test -- isItALetter.test.js
+
+doc: 
+	jsdoc src -r 
+
+openDoc:
+	open out/index.html

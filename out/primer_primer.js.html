@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: primer/primer.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,52 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: primer/primer.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Class num
+ */
+class num {
+    /**
+     * 
+     * @param {Int} number Any  positive number bigger than zero
+     * @returns true or false if number is prime
+     */
+    primeNumber(number) {
+        try {
+            let count = 0;
 
+            if (typeof (number) != "number") {
+                throw new Error("Not a Number");
+            } else if (number &lt;= 1) {
+                throw "Not valid Number";
+            } else {
+                for (let i = 1; i &lt;= number; i++) {
+                    if (number % i === 0) {
+                        count++;
+                    }
+                }
+            }
+            return count === 2;
 
-    <h3> </h3>
+        } catch (error) {
+            return error.toString();
+        }
+    }
+}
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+module.exports = {
+    num
+};</code></pre>
+        </article>
+    </section>
 
 
 

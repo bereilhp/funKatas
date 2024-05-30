@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: primeNumbers/prime.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,59 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: primeNumbers/prime.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ *
+ * @param {number} number
+ * @returns true of false
+ */
+const isPrime = (number) => {
+  let s = Math.sqrt(number);
+  for (let i = 2; i &lt;= s; i++) {
+    if (number % i === 0) return false;
+  }
+  return number >= 2;
+};
 
+/**
+ *
+ * @param {number} start
+ * @param {number} finish
+ * @returns Sequence of all prime number from start to finish
+ */
+const getPrimes = (start, finish) => {
+  let ans = new Array();
+  if (start > finish) {
+    let str = finish;
+    let fin = start;
+    for (let i = str; i &lt;= fin; i++) {
+      if (isPrime(i)) {
+        ans.push(i);
+      }
+    }
+    return ans;
+  } else {
+    for (let i = start; i &lt;= finish; i++) {
+      if (isPrime(i)) {
+        ans.push(i);
+      }
+    }
+    return ans;
+  }
+};
 
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+module.exports = { isPrime, getPrimes };
+</code></pre>
+        </article>
+    </section>
 
 
 
