@@ -8,7 +8,7 @@ open:
 	@codium .
 
 test: 
-	@npm test -- isItALetter.test.js
+	@npm test -- scoreOfAString.test.js
 
 doc: 
 	jsdoc src -r 
