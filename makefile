@@ -8,7 +8,7 @@ open:
 	@codium .
 
 test: 
-	@npm test -- lengthOfArgument.test.js
+	@npm test -- concatenationOfArray.test.js
 
 doc: 
 	jsdoc src -r 
