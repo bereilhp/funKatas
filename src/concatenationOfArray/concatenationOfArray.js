@@ -3,6 +3,10 @@
  * @return {number[]}
  */
 let getConcatenation = function (nums) {
+  nums.map((num) => {
+    nums.push(num);
+  });
+
   return nums;
 };
 
