@@ -8,7 +8,7 @@ open:
 	@codium .
 
 test: 
-	@npm test -- concatenationOfArray.test.js
+	@npm test -- removeElement.test.js
 
 doc: 
 	jsdoc src -r 
