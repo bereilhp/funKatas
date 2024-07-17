@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Playing around and doing some katas with TDD.
+Playing around and doing some katas with Test Driven Development.
 
 ## To get started
 
