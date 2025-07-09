@@ -11,7 +11,7 @@ test:
 	@npm test -- removeElement.test.js
 
 doc: 
-	jsdoc src -r 
-
+	npx jsdoc src -r
+	
 openDoc:
 	open out/index.html
