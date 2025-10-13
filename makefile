@@ -8,7 +8,7 @@ open:
 	@codium .
 
 test: 
-	@npm test -- removeElement.test.js
+	@npm test -- missingInteger.test.js
 
 doc: 
 	npx jsdoc src -r
