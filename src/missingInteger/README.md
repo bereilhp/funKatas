@@ -1,4 +1,4 @@
-# Missing Integer Problem
+# Description
 
 ## Missing Integer
 
